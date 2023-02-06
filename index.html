@@ -1,0 +1,2286 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="Description" content="Enter your description here" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+        <link rel="stylesheet" href="style.css" />
+        <!-- google fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Abel&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+        <!-- owl carousel -->
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/owl.theme.default.min.css">
+        <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+
+        <!-- microtip -->
+        <link rel="stylesheet" href="css/tooltip.css">
+
+        <title>Dashboard 2.0</title>
+    </head>
+    <body>
+
+
+<!-- font-family: 'Abel', sans-serif; -->
+<!-- font-family: 'Inter', sans-serif; -->
+<!-- font-family: 'Roboto', sans-serif; -->
+<div class="offer-bar">
+    <p>Periodo de prueba 7 días</p>
+    <button class="btn"><a href="#">Consultar planes</a></button>
+</div>
+
+
+
+        <!-- header -->
+        <div class="new-dash-header">
+
+            <div class="header-container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col logo">
+                        <img src="img/Group 263.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col">
+                        <div class="link-itmes">
+
+                            <a href="#">Mis libros</a>
+                            <a href="#" class="help-btn">Ayuda</a>
+                            <a href="#">
+                                <button class="btn upgrade-btn">Opciones</button>
+                            </a>
+                            <a href="#"><i class="far fa-bell"></i></a>
+                            <div href="#" class="user-img-wraper">
+                                <span>Comunidad</span>
+                                <div class="drop-inner">
+                                    <a href="#" id="mis-historias-btn"> <i class="far fa-clock"></i> Mis historias</a>
+                                </div>
+                            </div>
+                            <div href="#" class="user-img-wraper">
+                                <lord-icon src="https://cdn.lordicon.com/dqxvvqzi.json" trigger="hover" colors="outline:#121331,primary:#794eda,secondary:#794eda" stroke="0"></lord-icon>
+
+                                <!-- <span>ehmasuk</span> -->
+                                <div class="drop-inner">
+                                    <a href="#" id="profile-content-btn"> <i class="fas fa-user"></i> Profile</a>
+                                    <a href="#" id="video-content-btn"> <i class="fas fa-play-circle"></i> Videos</a>
+                                    <a href="#" id="facturas-content-btn"> <i class="fas fa-money-bill"></i> Facturas</a>
+                                    <a href="#" id="certificates-content-btn"> <i class="fas fa-award"></i> Certificados</a>
+                                    <a href="#" id="lista-de-content-btn"> <i class="far fa-heart"></i> Lista de deseos</a>
+                                    <a href="#" id="lista-de-content-btn"> <i class="far fa-heart"></i> Mis historias</a>
+                                </div>
+                            </div>
+                            
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <i class="fas fa-bars" id="dashborad-toogle-btn"></i>
+
+        <!-- sidebar -->
+        <div class="new-sidebar">
+            
+            <ul>
+                <li class="list active">
+                    <b></b>
+                    <b></b>
+                    <a href="#">
+                        <span class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.566 17.842c-.945 2.462-3.678 4.012-6.563 4.161.139-2.772 1.684-5.608 4.209-6.563l.51.521c-1.534 1.523-2.061 2.765-2.144 3.461.704-.085 2.006-.608 3.483-2.096l.505.516zm-1.136-11.342c-1.778-.01-4.062.911-5.766 2.614-.65.649-1.222 1.408-1.664 2.258 1.538-1.163 3.228-1.485 5.147-.408.566-1.494 1.32-3.014 2.283-4.464zm5.204 17.5c.852-.44 1.61-1.013 2.261-1.664 1.708-1.706 2.622-4.001 2.604-5.782-1.575 1.03-3.125 1.772-4.466 2.296 1.077 1.92.764 3.614-.399 5.15zm11.312-23.956c-.428-.03-.848-.044-1.261-.044-9.338 0-14.465 7.426-16.101 13.009l4.428 4.428c5.78-1.855 12.988-6.777 12.988-15.993v-.059c-.002-.437-.019-.884-.054-1.341zm-5.946 7.956c-1.105 0-2-.895-2-2s.895-2 2-2 2 .895 2 2-.895 2-2 2z"/></svg>
+                        </span>
+                        <span class="title">Startup</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <b></b>
+                    <b></b>
+                    <a href="#">
+                        <span class="icon">
+                            <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m21 4c0-.478-.379-1-1-1h-16c-.62 0-1 .519-1 1v16c0 .621.52 1 1 1h16c.478 0 1-.379 1-1zm-10 .5v15h-6.5v-15zm1.5 8h7v7h-7zm7-8v6.5h-7v-6.5z" fill-rule="nonzero"/></svg>
+                        </span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <b></b>
+                    <b></b>
+                    <a href="#">
+                        <span class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M7 19h-6v-11h6v11zm8-18h-6v18h6v-18zm8 11h-6v7h6v-7zm1 9h-24v2h24v-2z"/></svg>
+                        </span>
+                        <span class="title">Objetivo</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <b></b>
+                    <b></b>
+                    <a href="#">
+                        <span class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 3v18h24v-18h-24zm13 14h-10v-.417c-.004-1.112.044-1.747 1.324-2.043 1.403-.324 2.787-.613 2.122-1.841-1.973-3.637-.563-5.699 1.554-5.699 2.077 0 3.521 1.985 1.556 5.699-.647 1.22.688 1.51 2.121 1.841 1.284.297 1.328.936 1.323 2.057v.403zm8 0h-6v-2h6v2zm0-4h-6v-2h6v2zm0-4h-6v-2h6v2z"/></svg>
+                        </span>
+                        <span class="title">Asesorías</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <b></b>
+                    <b></b>
+                    <a href="#">
+                        <span class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M22 9v1.528c-.476.69-3.815 1.971-9.77 1.971-6.239 0-9.736-1.358-10.23-2.088v-1.411h20zm2-2h-24v3.491c0 2.657 6.154 4.009 12.23 4.009 5.922 0 11.77-1.284 11.77-3.895v-3.605zm-2 8.074v4.926h-20v-5.001c-.823-.337-1.478-.711-2-1.096v8.097h24v-7.949c-.583.402-1.262.741-2 1.023zm-8 1.958c0 1.087-.896 1.968-2 1.968s-2-.881-2-1.968v-1.032h4v1.032zm-5-15.032c-1.104 0-2 .896-2 2v2h2v-1.5c0-.276.224-.5.5-.5h5c.276 0 .5.224.5.5v1.5h2v-2c0-1.104-.896-2-2-2h-6z"/></svg>
+                        </span>
+                        <span class="title">Mis Libros</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <b></b>
+                    <b></b>
+                    <a href="#">
+                        <span class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm7.753 18.305c-.261-.586-.789-.991-1.871-1.241-2.293-.529-4.428-.993-3.393-2.945 3.145-5.942.833-9.119-2.489-9.119-3.388 0-5.644 3.299-2.489 9.119 1.066 1.964-1.148 2.427-3.393 2.945-1.084.25-1.608.658-1.867 1.246-1.405-1.723-2.251-3.919-2.251-6.31 0-5.514 4.486-10 10-10s10 4.486 10 10c0 2.389-.845 4.583-2.247 6.305z"/></svg>
+                        </span>
+                        <span class="title">Puntos</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <b></b>
+                    <b></b>
+                    <a href="#">
+                        <span class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 5h-5.033c-2.743 0-4.967 2.239-4.967 5 0 2.762 2.224 5 4.967 5h5.033v-10zm2.007 17.475c-.52-.424-.902-.994-1.095-1.637l-1.151-3.827h-5.125l1.905 5.883c.214.659.828 1.106 1.521 1.106h3.439c.358 0 .677-.225.797-.562.12-.337.015-.713-.263-.939l-.028-.024zm-.007-17.475v2.014c3.088-.445 6.379-1.603 10-3.544v13.064c-3.607-1.924-6.958-3.109-10-3.548v2.014c3.164.509 7.16 1.992 12 5v-20c-4.964 3.085-8.877 4.502-12 5z"/></svg>
+                        </span>
+                        <span class="title">Afiliacion</span>
+                    </a>
+                </li>
+                </li>
+                <li class="list">
+                    <b></b>
+                    <b></b>
+                    <a href="#">
+                        <span class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M11 24h-9v-12h9v12zm0-18h-11v4h11v-4zm2 18h9v-12h-9v12zm0-18v4h11v-4h-11zm4.369-6c-2.947 0-4.671 3.477-5.369 5h5.345c3.493 0 3.53-5 .024-5zm-.796 3.621h-2.043c.739-1.121 1.439-1.966 2.342-1.966 1.172 0 1.228 1.966-.299 1.966zm-9.918 1.379h5.345c-.698-1.523-2.422-5-5.369-5-3.506 0-3.469 5 .024 5zm.473-3.345c.903 0 1.603.845 2.342 1.966h-2.043c-1.527 0-1.471-1.966-.299-1.966z"/></svg>
+                        </span>
+                        <span class="title">Suscripcion</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <b></b>
+                    <b></b>
+                    <a href="#">
+                        <span class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 14.187v-4.374c-2.148-.766-2.726-.802-3.027-1.529-.303-.729.083-1.169 1.059-3.223l-3.093-3.093c-2.026.963-2.488 1.364-3.224 1.059-.727-.302-.768-.889-1.527-3.027h-4.375c-.764 2.144-.8 2.725-1.529 3.027-.752.313-1.203-.1-3.223-1.059l-3.093 3.093c.977 2.055 1.362 2.493 1.059 3.224-.302.727-.881.764-3.027 1.528v4.375c2.139.76 2.725.8 3.027 1.528.304.734-.081 1.167-1.059 3.223l3.093 3.093c1.999-.95 2.47-1.373 3.223-1.059.728.302.764.88 1.529 3.027h4.374c.758-2.131.799-2.723 1.537-3.031.745-.308 1.186.099 3.215 1.062l3.093-3.093c-.975-2.05-1.362-2.492-1.059-3.223.3-.726.88-.763 3.027-1.528zm-4.875.764c-.577 1.394-.068 2.458.488 3.578l-1.084 1.084c-1.093-.543-2.161-1.076-3.573-.49-1.396.581-1.79 1.693-2.188 2.877h-1.534c-.398-1.185-.791-2.297-2.183-2.875-1.419-.588-2.507-.045-3.579.488l-1.083-1.084c.557-1.118 1.066-2.18.487-3.58-.579-1.391-1.691-1.784-2.876-2.182v-1.533c1.185-.398 2.297-.791 2.875-2.184.578-1.394.068-2.459-.488-3.579l1.084-1.084c1.082.538 2.162 1.077 3.58.488 1.392-.577 1.785-1.69 2.183-2.875h1.534c.398 1.185.792 2.297 2.184 2.875 1.419.588 2.506.045 3.579-.488l1.084 1.084c-.556 1.121-1.065 2.187-.488 3.58.577 1.391 1.689 1.784 2.875 2.183v1.534c-1.188.398-2.302.791-2.877 2.183zm-7.125-5.951c1.654 0 3 1.346 3 3s-1.346 3-3 3-3-1.346-3-3 1.346-3 3-3zm0-2c-2.762 0-5 2.238-5 5s2.238 5 5 5 5-2.238 5-5-2.238-5-5-5z"/></svg>
+                        </span>
+                        <span class="title">Setting</span>
+                    </a>
+                </li>
+
+
+            </ul>
+        </div>
+
+
+
+
+        <div class="content">
+            <!-- content -->
+            <!-- content -->
+            <!-- content -->
+
+            <!-- STARTUP -->
+            <div class="landing single-content">
+                <div class="gretings">
+                    <div class="row pb-4 justify-content-between">
+                        <div class="d-flex">
+                            <img src="img/wave_hand.png" alt="" class="img-fluid mr-3">
+                            <p class="text">Hola, <br> ehmasuk</p>
+                        </div>
+                        <div>
+                            <button class="btn exercise-btn">Exercise</button>
+                        </div>
+                    </div>
+                    <div class="progress top-right-progress">
+                        <div class="progress-bar w-75 progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                
+
+
+
+                <div class="landing-box-wraper row m-0">
+
+                    <div class="col-md-3 landing-single-box1">
+                        <div class="landing-box">
+                            <div class="title">
+                                <p>Escribir una novela</p>
+                                <img src="img/writepng.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="box-body">
+                                <p class="mb-0">Escribe una historia emocionante en la mitad del tiempo y con el doble de fuerza.</p>
+                            </div>
+                            <div class="procced-btn">
+                                <button class="btn">Cambiar</button>
+                            </div>
+                        </div>
+                        <div class="landing-infos">
+                            <p class="title">Recomendado para:</p>
+                            <p class="point"> <i class="fa fa-check mr-1"></i> <span>Superar el bloqueo.</span></p>
+                            <p class="point"> <i class="fa fa-check mr-1"></i> <span>Organizar una gran historia.</span></p>
+                            <p class="point"> <i class="fa fa-check mr-1"></i> <span>Crear escenas potentes.</span></p>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-3 landing-single-box2">
+                        <div class="landing-box">
+                            <div class="title">
+                                <p>Aprender técnica narrativa</p>
+                                <img src="img/tech.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="box-body">
+                                <p class="mb-0">Crea historias adictivas con las técnicas narrativas usadas por los clásicos.</p>
+                            </div>
+                            <div class="procced-btn">
+                                <button class="btn">Seleccionar</button>
+                            </div>
+                        </div>
+                        <div class="landing-infos">
+                            <p class="title">Recomendado para:</p>
+                            <p class="point"> <i class="fa fa-check mr-1"></i> <span>Obliga al lector a leer hasta el final.</span></p>
+                            <p class="point"> <i class="fa fa-check mr-1"></i> <span>Aprende a generar suspense.</span></p>
+                            <p class="point"> <i class="fa fa-check mr-1"></i> <span>Explota el potencial de tus ideas.</span></p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 landing-single-box3">
+                        <div class="landing-box">
+                            <div class="title">
+                                <p>Vende más libros</p>
+                                <img src="img/coins.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="box-body">
+                                <p class="mb-0">Vende 1000 copias de tu libro en la primera semana, utiliza una estrategia arrasadora.</p>
+                            </div>
+                            <div class="procced-btn">
+                                <button class="btn">Seleccionar</button>
+                            </div>
+                        </div>
+                        <div class="landing-infos">
+                            <p class="title">Recomendado para:</p>
+                            <p class="point"> <i class="fa fa-check mr-1"></i> <span>Fundar una comunidad de seguidores.</span></p>
+                            <p class="point"> <i class="fa fa-check mr-1"></i> <span>Crear mensajes virales.</span></p>
+                            <p class="point"> <i class="fa fa-check mr-1"></i> <span>Incentivar las ventas de tus libros.</span></p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 landing-single-box4">
+                        <div class="landing-box">
+                            <div class="title">
+                                <p>Publicar en Amazon</p>
+                                <img src="img/award.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="box-body">
+                                <p class="mb-0">Elige las palabras clave adecuadas, elabora una sinopsis vendedora.</p>
+                            </div>
+                            <div class="procced-btn">
+                                <button class="btn">Seleccionar</button>
+                            </div>
+                        </div>
+                        <div class="landing-infos">
+                            <p class="title">Recomendado para:</p>
+                            <p class="point"> <i class="fa fa-check mr-1"></i> <span>Publicar en Ebook y papel.</span></p>
+                            <p class="point"> <i class="fa fa-check mr-1"></i> <span>Libros a bajo precio (presentaciones)</span></p>
+                            <p class="point"> <i class="fa fa-check mr-1"></i> <span>Más visibilidad en Amazon.</span></p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="col-md-9 ml-auto" style="transition: 1s !important;">
+                        <div class="landing-video-carousel">
+                            <div class="keywords">
+                                <span>Inicial</span>
+                                <span>Intermedio</span>
+                                <span>Avanzado</span>
+                            </div>
+
+
+                            <div class="carousel-section owl-carousel"style="border-radius: 5px;background-color: #141414;padding:15px;">
+
+
+                                    <div class="single-amazing" onclick="openPop()">
+                                        <img src="https://picsum.photos/200/300?1" alt="" class="img-fluid cover-img">
+                                        <p class="head">Lorem ipsum dolor sit amet</p>
+                                        <div class="progress single-amazing-time">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"  style="width: 30%"></div>
+                                        </div>
+                                        <div class="row align-items-center justify-content-between mt-3">
+                                            <div class="time"><i class="far fa-clock mr-2"></i>8 horas</div>
+                                            <div class="rating">
+                                                <i class="fas fa-star text-warning"></i>
+                                                <i class="fas fa-star text-warning"></i>
+                                                <i class="fas fa-star text-warning"></i>
+                                                <i class="fas fa-star text-warning"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="single-amazing" onclick="openPop()">
+                                        <img src="https://picsum.photos/200/300?2" alt="" class="img-fluid cover-img">
+                                        <p class="head">Lorem ipsum dolor sit amet</p>
+                                        <div class="progress single-amazing-time">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"  style="width: 30%"></div>
+                                        </div>
+                                        <div class="row align-items-center justify-content-between mt-3">
+                                            <div class="time"><i class="far fa-clock mr-2"></i>8 horas</div>
+                                            <div class="rating">
+                                                <i class="fas fa-star text-warning"></i>
+                                                <i class="fas fa-star text-warning"></i>
+                                                <i class="fas fa-star text-warning"></i>
+                                                <i class="fas fa-star text-warning"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="single-amazing" onclick="openPop()">
+                                        <img src="https://picsum.photos/200/300?3" alt="" class="img-fluid cover-img">
+                                        <p class="head">Lorem ipsum dolor sit amet</p>
+                                        <div class="progress single-amazing-time">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"  style="width: 30%"></div>
+                                        </div>
+                                        <div class="row align-items-center justify-content-between mt-3">
+                                            <div class="time"><i class="far fa-clock mr-2"></i>8 horas</div>
+                                            <div class="rating">
+                                                <i class="fas fa-star text-warning"></i>
+                                                <i class="fas fa-star text-warning"></i>
+                                                <i class="fas fa-star text-warning"></i>
+                                                <i class="fas fa-star text-warning"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="single-amazing" onclick="openPop()">
+                                        <img src="https://picsum.photos/200/300?4" alt="" class="img-fluid cover-img">
+                                        <p class="head">Lorem ipsum dolor sit amet</p>
+                                        <div class="progress single-amazing-time">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"  style="width: 30%"></div>
+                                        </div>
+                                        <div class="row align-items-center justify-content-between mt-3">
+                                            <div class="time"><i class="far fa-clock mr-2"></i>8 horas</div>
+                                            <div class="rating">
+                                                <i class="fas fa-star text-warning"></i>
+                                                <i class="fas fa-star text-warning"></i>
+                                                <i class="fas fa-star text-warning"></i>
+                                                <i class="fas fa-star text-warning"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="single-amazing" onclick="openPop()">
+                                        <img src="https://picsum.photos/200/300?5" alt="" class="img-fluid cover-img">
+                                        <p class="head">Lorem ipsum dolor sit amet</p>
+                                        <div class="progress single-amazing-time">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"  style="width: 30%"></div>
+                                        </div>
+                                        <div class="row align-items-center justify-content-between mt-3">
+                                            <div class="time"><i class="far fa-clock mr-2"></i>8 horas</div>
+                                            <div class="rating">
+                                                <i class="fas fa-star text-warning"></i>
+                                                <i class="fas fa-star text-warning"></i>
+                                                <i class="fas fa-star text-warning"></i>
+                                                <i class="fas fa-star text-warning"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+
+
+
+        
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="affiliate-bar">
+                    <div class="wraper">
+                        <div class="row align-items-center justify-content-center">
+                            <div class="col-md-2 p-0">
+                                <img src="img/aff.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="col-md-7">
+                                <b>¡Aprende y GANA!</b>
+                                <p>Recomienda a una amiga para obtener un 10% de descuento con un montón de BONUS</p>
+                            </div>
+                            <div class="col-md-3 text-center p-0">
+                                <button class="btn affiliate-btn">Avanzar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- DASHBOARD -->
+            <div class="dashboard-content single-content">
+
+                <div class="row m-0 p-0">
+                    <div class="col-lg-6 p-0 order-lg-1 order-2">
+                        <div class="row m-0 p-0">
+
+                            <div class="col-md-6">
+                                <div class="mini-card">
+                                    <p class="card-title-wraper">
+                                        <span class="mini-card-title">
+                                            Objetivos cumplidos 
+                                        </span>
+                                        <span class="percent hulk">
+                                            <img src="img/rise.png" alt="" class="img-fluid">
+                                            12.0%
+                                        </span>
+                                    </p>
+                                    <p class="card-head">6</p>
+                                    <p class="card-tail">Employee</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="mini-card">
+                                    <p class="card-title-wraper">
+                                        <span class="mini-card-title">
+                                            Puntos
+                                        </span>
+                                        <span class="percent fire">
+                                            <img src="img/rise.png" alt="" class="img-fluid">
+                                            12.0%
+                                        </span>
+                                    </p>
+                                    <p class="card-head">170</p>
+                                    <p class="card-tail">Employee</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="mini-card">
+                                    <p class="card-title-wraper">
+                                        <span class="mini-card-title">
+                                            Mis libros
+                                        </span>
+                                        <span class="percent hulk">
+                                            <img src="img/rise.png" alt="" class="img-fluid">
+                                            12.0%
+                                        </span>
+                                    </p>
+                                    <p class="card-head">4</p>
+                                    <p class="card-tail">Applicants</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="mini-card">
+                                    <p class="card-title-wraper">
+                                        <span class="mini-card-title">
+                                            Asesorías
+                                        </span>
+                                        <span class="percent hulk">
+                                            <img src="img/rise.png" alt="" class="img-fluid">
+                                            12.0%
+                                        </span>
+                                    </p>
+                                    <p class="card-head">0</p>
+                                    <p class="card-tail">Viewers</p>
+                                </div>
+                            </div>
+
+
+                            <div class="col-12">
+                                <div class="recom">
+                                    <p class="recom-title">
+                                        Recomendaciones 
+                                    </p>
+                                    <p class="recom-text">Hasasa El aforismo griego "Conócete a ti mismo" estaba inscrito en el pronaos del templo de Apolo en Delfos, según el periegético Pausanias El aforismo griego "Conócete a ti mismo" estaba inscrito en el pronaos del templo de Apolo en Delfos, según el periegético PausaniasEl aforismo griego "Conócete a ti mismo" estaba inscrito en el pronaos del templo de Apolo en Delfos, según el periegético Pausanias... </p>
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-6 pl-0 pr-lg-5 order-lg-2 order-1">
+
+                        <div class="top-right-bar ml-lg-auto">
+                            <div class="top-right-bar-info d-flex justify-content-between px-2">
+                                <p class="info-user">Reto (del día)</p>
+                                <p class="info-number">4/6</p>
+                            </div>
+                            <div class="progress top-right-progress">
+                                <div class="progress-bar w-75 progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+
+                        
+
+                        <div class="d-flex justify-content-lg-end">
+                            <div class="icon-card mr-2">
+                                <img src="img/icons8-fire.gif" alt="" class="img-fluid">
+                                <p class="my-2">4 días</p>
+                                <p>Ganar el reto</p>
+                            </div>
+
+                            <div class="icon-card icon-card-diamond" aria-label="Finaliza el primer nivel" data-microtip-position="top" role="tooltip">
+                                <img src="img/diamond.gif" alt="" class="img-fluid">
+                                <p class="my-2">4 días</p>
+                                <p>Ganar el reto</p>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+
+                <div class="footer-big-stat">
+                    <div class="row m-0 p-0 justify-content-between align-items-center">
+                        <p class="footer-stat-title">Estadísticas</p>
+                        <div class="stat-color-des">
+                            <ul>
+                                <li> <span></span> Objetivos</li>
+                                <li> <span></span> Asesorías</li>
+                                <li> <span></span> Mis libros</li>
+                                <li> <span></span> Puntos</li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-stat-drop">
+                            <button class="btn">This Month <i class="fas fa-chevron-down ml-2"></i></button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- OBJETIVO -->
+            <div class="objective-content single-content">
+
+                <div class="row m-0 p-0 justify-content-between objectivo-section">
+
+                    <div class="object-lavel-card" style="background-color: #ACD7FE;">
+                        <div class="object-lavel-card-inner orange">
+                            <div class="row m-0 p-0 justify-content-between">
+                                <div class="text-left">December 20, <br> 2021</div>
+                                <i class="fas fa-ellipsis-v" style="cursor:pointer"></i>
+                            </div>
+                            <h3>Nivel inicial</h3>
+                            <p class="author">Aprendiz</p>
+                            <div class="progress-wraper">
+                                <div class="progress-title">
+                                    <p>Progress</p>
+                                    <p>60%</p>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="row m-0 p-0 justify-content-between footer">
+                                <div class="photos">
+                                    <img src="https://images.pexels.com/photos/14505987/pexels-photo-14505987.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="" class="img-fluid">
+                                    <img src="https://images.pexels.com/photos/4498277/pexels-photo-4498277.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="img-fluid">
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                                <div class="days">12 Días</div>
+                            </div>
+                        </div>
+                        <div class="icons">
+                            <p><img src="img/Time Circle.png" alt="" class="img-fluid">30 hours</p>
+                            <p> <img src="img/Star.png" alt="" class="imgfluid"> 4.5 <span>(54k)</span> </p>
+                            <p> <i class="far fa-heart"></i> </p>
+                        </div>
+                    </div>
+
+                    <div class="object-lavel-card">
+                        <div class="object-lavel-card-inner purple">
+                            <div class="row m-0 p-0 justify-content-between">
+                                <div class="text-left">December 20, <br> 2021</div>
+                                <i class="fas fa-ellipsis-v" style="cursor:pointer"></i>
+                            </div>
+                            <h3>Nivel intermedio</h3>
+                            <p class="author">Aprendiz</p>
+                            <div class="progress-wraper">
+                                <div class="progress-title">
+                                    <p>Progress</p>
+                                    <p>60%</p>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="row m-0 p-0 justify-content-between footer">
+                                <div class="photos">
+                                    <img src="https://images.pexels.com/photos/14505987/pexels-photo-14505987.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="" class="img-fluid">
+                                    <img src="https://images.pexels.com/photos/4498277/pexels-photo-4498277.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="img-fluid">
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                                <div class="days">12 Días</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="object-lavel-card">
+                        <div class="object-lavel-card-inner blue">
+                            <div class="row m-0 p-0 justify-content-between">
+                                <div class="text-left">December 20, <br> 2021</div>
+                                <i class="fas fa-ellipsis-v" style="cursor:pointer"></i>
+                            </div>
+                            <h3>Nivel alto</h3>
+                            <p class="author">Aprendiz</p>
+                            <div class="progress-wraper">
+                                <div class="progress-title">
+                                    <p>Progress</p>
+                                    <p>60%</p>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="row m-0 p-0 justify-content-between footer">
+                                <div class="photos">
+                                    <img src="https://images.pexels.com/photos/14505987/pexels-photo-14505987.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="" class="img-fluid">
+                                    <img src="https://images.pexels.com/photos/4498277/pexels-photo-4498277.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="img-fluid">
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                                <div class="days">12 Días</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="object-lavel-card">
+                        <div class="object-lavel-card-inner pink">
+                            <div class="row m-0 p-0 justify-content-between">
+                                <div class="text-left">December 20, <br> 2021</div>
+                                <i class="fas fa-ellipsis-v" style="cursor:pointer"></i>
+                            </div>
+                            <h3>Avanzado</h3>
+                            <p class="author">Aprendiz</p>
+                            <div class="progress-wraper">
+                                <div class="progress-title">
+                                    <p>Progress</p>
+                                    <p>60%</p>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="row m-0 p-0 justify-content-between footer">
+                                <div class="photos">
+                                    <img src="https://images.pexels.com/photos/14505987/pexels-photo-14505987.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="" class="img-fluid">
+                                    <img src="https://images.pexels.com/photos/4498277/pexels-photo-4498277.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="img-fluid">
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                                <div class="days">12 Días</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="object-lavel-card">
+                        <div class="object-lavel-card-inner green">
+                            <div class="row m-0 p-0 justify-content-between">
+                                <div class="text-left">December 20, <br> 2021</div>
+                                <i class="fas fa-ellipsis-v" style="cursor:pointer"></i>
+                            </div>
+                            <h3>Experto</h3>
+                            <p class="author">Aprendiz</p>
+                            <div class="progress-wraper">
+                                <div class="progress-title">
+                                    <p>Progress</p>
+                                    <p>60%</p>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="row m-0 p-0 justify-content-between footer">
+                                <div class="photos">
+                                    <img src="https://images.pexels.com/photos/14505987/pexels-photo-14505987.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="" class="img-fluid">
+                                    <img src="https://images.pexels.com/photos/4498277/pexels-photo-4498277.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="img-fluid">
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                                <div class="days">12 Días</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="row m-0 p-0">
+                    <div class="col-lg-4 p-0">
+                        <div class="object-finaleza">
+                            <h3>Finaliza este curso</h3>
+                            <div class="object-finaleza-box">
+                                <img src="img/bookobj.png" alt="" class="img-fluid cover">
+                                <div class="icons d-flex justify-content-between">
+                                    <div class="single-icon">
+                                        <img src="img/Star.png" alt="" class="img-fluid">
+                                        <p>4.5 <span>(54k)</span> </p>
+                                    </div>
+                                    <div class="single-icon">
+                                        <img src="img/Video.png" alt="" class="img-fluid">
+                                        <p>2 sessions</p>
+                                    </div>
+                                    <div class="single-icon">
+                                        <img src="img/Time Circle.png" alt="" class="img-fluid">
+                                        <p>8 hours</p>
+                                    </div>
+                                </div>
+                                <div class="ttl">
+                                    <p>Anxiety webinar, from etiology to treatment etiology to treatment</p>
+                                </div>
+                                <div class="des">
+                                    <p>Anxiety is one of the most common complaints of clients to psychiatrists and psychologists. Although from a semiotic </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 p-0">
+                        <div class="tu-object">
+                            <div class="ttl">
+                                <img src="img/Profile.png" alt="" class="img-fluid">
+                                <h3>Tu objetivo</h3>
+                            </div>
+                            <div class="object-timeline">
+                                <div class="single-timeline">
+                                    <p>Escribir una novela</p>
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <div class="single-timeline">
+                                    <p>Capítulos escritos  2</p>
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <div class="single-timeline">
+                                    <p>En progreso 8 capítulos</p>
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <div class="single-timeline">
+                                    <p>¡Finalicé mi novela!</p>
+                                    <i class="fas fa-check"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 p-0">
+                        <div class="object-exam">
+                            <div class="ttl">
+                                <img src="img/hat.png" alt="" class="ig-fluid">
+                                <h3>Examen (nivel inicial)</h3>
+                            </div>
+                            <div class="des">
+                                <p>Anxiety is one of the most common complaints of clients to psychiatrists and psychologists. Although from a semiotic </p>
+                            </div>
+                            <div class="icons">
+                                <p > <img src="img/Time Circle.png" alt="" class="img-fluid"> 1 hora</p>
+                                <p style="font-size: 17px;">Iniciar examen</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- ASESORIAS -->
+
+
+
+            <!-- MIS LIBROS -->
+            <div class="mis-libros-content single-content">
+
+                <div class="row m-0 p-0">
+                    <div class="col-lg-6 p-0 order-lg-1 order-2">
+                        <div class="row m-0 p-0">
+
+                            <div class="col-md-6">
+                                <div class="mini-card">
+                                    <p class="card-title-wraper">
+                                        <span class="mini-card-title">
+                                            Title Book 1
+                                        </span>
+                                        <span class="percent hulk">
+                                            <img src="img/rise.png" alt="" class="img-fluid">
+                                            10.0%
+                                        </span>
+                                    </p>
+                                    <p class="card-head">6</p>
+                                    <p class="card-tail">Pages escritas</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="mini-card">
+                                    <p class="card-title-wraper">
+                                        <span class="mini-card-title">
+                                            Title Book 2
+                                        </span>
+                                        <span class="percent fire">
+                                            <img src="img/rise.png" alt="" class="img-fluid">
+                                            12.0%
+                                        </span>
+                                    </p>
+                                    <p class="card-head">170</p>
+                                    <p class="card-tail">Pages escritas</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 pl-0 pr-lg-5 order-lg-2 order-1">
+
+                        <div class="top-right-bar ml-lg-auto">
+                            <div class="top-right-bar-info d-flex justify-content-between px-2">
+                                <p class="info-user">Reto (del día)</p>
+                                <p class="info-number">4/6</p>
+                            </div>
+                            <div class="progress top-right-progress">
+                                <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        
+
+                        <div class="d-flex justify-content-lg-end">
+                            <div class="icon-card mr-2">
+                                <img src="img/icons8-fire.gif" alt="" class="img-fluid">
+                                <p class="my-2">4 días</p>
+                                <p>Ganar el reto</p>
+                            </div>
+
+                            <div class="icon-card icon-card-diamond">
+                                <img src="img/diamond.gif" alt="" class="img-fluid">
+                                <p class="my-2">4 días</p>
+                                <p>Ganar el reto</p>
+                            </div>
+                        </div>
+
+
+                        <div class="recom">
+                            <p class="recom-title">
+                                Recomendaciones 
+                            </p>
+                            <p class="recom-text">Hasasa El aforismo griego "Conócete a ti mismo" estaba inscrito en el pronaos del templo de Apolo en Delfos, según el periegético Pausanias El aforismo griego "Conócete a ti mismo" estaba inscrito en el pronaos del templo de Apolo en Delfos, según el periegético PausaniasEl aforismo griego "Conócete a ti mismo" estaba inscrito en el pronaos del templo de Apolo en Delfos, según el periegético Pausanias... </p>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+
+
+                <div class="row m-0">
+                    <div class="col-md-6">
+                        <div class="books-footer">
+                            <p class="title px-3">Revisiones del libro</p>
+                            <div class="row m-0">
+                                <div class="col-md-6">
+                                    <div class="books-footer-box">
+                                        <p class="head">Capítulo 1 disponible <span style="background-color: #5BEB7B;" class="dots"></span></p>
+                                        <p class="des">Descargar</p>
+                                        <div class="progress top-right-progress mt-3">
+                                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="books-footer-box">
+                                        <p class="head">Capítulo 2 pendiente <span style="background-color: #EB5B75;" class="dots"></span></p>
+                                        <p class="des">Subir</p>
+                                        <div class="progress top-right-progress mt-3">
+                                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="books-footer-box">
+                                        <p class="head">Capítulo 2 revisando<span style="background-color: #FF942E;" class="dots"></span></p>
+                                        <p class="des">En revisión</p>
+                                        <div class="progress top-right-progress mt-3">
+                                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <!-- PUNTOS -->
+            <div class="puntos-content single-content">
+                <div class="row m-0 p-0">
+                    <div class="col-lg-6 p-0 order-lg-1 order-2">
+                        <div class="row m-0 p-0">
+
+                            <div class="col-md-6">
+                                <div class="mini-card">
+                                    <p class="card-title-wraper">
+                                        <span class="mini-card-title">
+                                            Puntos ganados
+                                        </span>
+                                        <span class="percent hulk">
+                                            <img src="img/rise.png" alt="" class="img-fluid">
+                                            12.0%
+                                        </span>
+                                    </p>
+                                    <p class="card-head">6</p>
+                                    <p class="card-tail">Puntos</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="mini-card">
+                                    <p class="card-title-wraper">
+                                        <span class="mini-card-title">
+                                            Pendientes
+                                        </span>
+                                        <span class="percent fire">
+                                            <img src="img/rise.png" alt="" class="img-fluid">
+                                            12.0%
+                                        </span>
+                                    </p>
+                                    <p class="card-head">170</p>
+                                    <p class="card-tail">Termina 1 curso</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="mini-card">
+                                    <p class="card-title-wraper">
+                                        <span class="mini-card-title">
+                                            Equivalencia
+                                        </span>
+                                        <span class="percent hulk">
+                                            <img src="img/rise.png" alt="" class="img-fluid">
+                                            12.0%
+                                        </span>
+                                    </p>
+                                    <p class="card-head">4</p>
+                                    <p class="card-tail">Puntos y euros</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="mini-card">
+                                    <p class="card-title-wraper">
+                                        <span class="mini-card-title">
+                                            Cambiar puntos
+                                        </span>
+                                        <span class="percent hulk">
+                                            <img src="img/rise.png" alt="" class="img-fluid">
+                                            12.0%
+                                        </span>
+                                    </p>
+                                    <p class="card-head">700</p>
+                                    <div class="text-right">
+                                        <button class="card-btn">Convertir</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="recom">
+                                    <p class="recom-title">
+                                        Recomendaciones 
+                                    </p>
+                                    <p class="recom-text">Hasasa El aforismo griego "Conócete a ti mismo" estaba inscrito en el pronaos del templo de Apolo en Delfos, según el periegético Pausanias El aforismo griego "Conócete a ti mismo" estaba inscrito en el pronaos del templo de Apolo en Delfos, según el periegético PausaniasEl aforismo griego "Conócete a ti mismo" estaba inscrito en el pronaos del templo de Apolo en Delfos, según el periegético Pausanias... </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 pl-0 pr-lg-5 order-lg-2 order-1">
+
+                        <div class="top-right-bar ml-lg-auto">
+                            <div class="top-right-bar-info d-flex justify-content-between px-2">
+                                <p class="info-user">Reto (del día)</p>
+                                <p class="info-number">4/6</p>
+                            </div>
+                            <div class="progress top-right-progress">
+                                <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        
+
+                        <div class="d-flex justify-content-lg-end">
+                            <div class="icon-card mr-2">
+                                <img src="img/icons8-fire.gif" alt="" class="img-fluid">
+                                <p class="my-2">4 días</p>
+                                <p>Ganar el reto</p>
+                            </div>
+
+                            <div class="icon-card icon-card-diamond">
+                                <img src="img/diamond.gif" alt="" class="img-fluid">
+                                <p class="my-2">4 días</p>
+                                <p>Ganar el reto</p>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+
+            <!-- AFILIACION -->
+            <div class="affiliate-content single-content">
+                <div class="info-bar">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-md-3 text-center">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZmlsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="" class="img-fluid profile-img">
+                        </div>
+                        <div class="col-md-9">
+                            <div class="row">
+                                <div class="col-4 pl-0">
+                                    <p class="name">eh masuk</p>
+                                </div>
+                                <div class="col-4"></div>
+                                <div class="col-4">
+                                    Ganado
+                                    <p>$0</p>
+                            </div>
+                            </div>
+                            <div class="row py-3 title">
+                                <p>Afiliado desde: Nov 19, 2021</p>
+                            </div>
+                            <div class="row pt-4">
+                                <div class="col-4 pl-0">
+                                    <p class="btm-title">Total de nuevos afiliados <br> conseguidos por el enlace</p>
+                                    <p>0</p>
+                                </div>
+                                <div class="col-4">
+                                    <p class="btm-title">Pagos realizadoss</p>
+                                    <p>0</p>
+                                </div>
+                                <div class="col-4">
+                                    <p class="btm-title">Pendiente de pago</p>
+                                    <p>0</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="aff-share-bar">
+                    <div class="row">
+                        <div class="col-md-4 pl-0">
+                            <div class="aff-card-share" style="background-image: url(https://escuela-ray-bolivar-sosa.com/new_img/images/one.jpg);">
+                                <p class="title">Enlace para compartir</p>
+                                <p class="link">https://escuela-ray-bolivar-sosa.com/signup?refferal_code=2689C5DF</p>
+                                <div class="aff-share-btns">
+                                    <button class="btn mr-3">Copiar enlace</button>
+                                    <button class="btn"><i class="fas fa-share-alt mr-2"></i> Compartir</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="aff-card-share" style="background-image: url(https://escuela-ray-bolivar-sosa.com/new_img/images/two.jpg);">
+                                <input class="invite-int" type="text" placeholder="xyz@example.com">
+                                <input class="btn invite-btn" type="submit" value="Invitar a amigos">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="aff-card-share aff-three pr-0">
+                                <p><strong>&iquest;CU&Aacute;NTO GANAR&Eacute;?</strong></p>
+                                
+                                <p>Ganar&aacute;s el 80% de lo que un nuevo alumno gaste en su primera compra. Ej. Si un alumno gasta 39.99&euro; <strong>ganar&aacute;s 30&euro;.</strong> Si gasta 68&euro; ganar&aacute;s 51&euro;. *Solo por el primer pago.&nbsp;</p>
+                                
+                                <p>&nbsp;</p>
+                                
+                                <p><strong>&iquest;CU&Aacute;NDO ME PAGAR&Aacute;N?</strong></p>
+                                
+                                <p>Entre el d&iacute;a 30 y el d&iacute;a 5 del mes siguiente recibir&aacute;s tus ingresos en Paypal. *Recuerda que el primer paso es escribir tu email para que podamos hacer los pagos.</p>
+                                
+                                <p>&nbsp;</p>
+                                
+                                <p><strong>&iquest;C&Oacute;MO PUEDO EXPLOTAR AL M&Aacute;XIMO EL PROGRAMA?</strong></p>
+                                
+                                <p>Puedes utilizar varias t&eacute;cnicas para tener un mejor impacto entre tus seguidores. A continuaci&oacute;n, explicamos dos muy efectivas, escribe un art&iacute;culo en el que expliques las ventajas de los cursos que ofrece la escuela y deja claro que si hacen la compra desde tu enlace, conseguir&aacute;n un descuento.</p>
+                                
+                                <p>&nbsp;</p>
+                                
+                                <p><strong>CONSIGUE M&Aacute;S DINERO (consigue el 50% de lo que paguen los alumnos para siempre)</strong></p>
+                                
+                                <p>Compartir tu enlace en las redes o por Whats App entre tus amigos puede funcionar, pero &iquest;qu&eacute; pasa si utilizas t&eacute;cnicas m&aacute;s estrat&eacute;gicas?</p>
+                                
+                                <p>Si te conviertes en embajador de la marca podr&aacute;s ganar de manera pasiva, el 50% de lo que paguen los alumnos cada mes. *Necesitas realizar al menos tres ventas para convertirte en embajador.</p>
+                                
+                                <p>&nbsp;</p>
+                                
+                                <p><strong>OPCIONES M&Aacute;S BENEFICIOSAS PARA VENDER LOS CURSOS DE LA ESCUELA</strong></p>
+                                
+                                <ol>
+                                    <li>Crea un art&iacute;culo en tu blog explicando las ventajas de la escuela. No olvides mencionar el taller de escritura. Sesiona gratis los 3 primeros martes de cada mes.</li>
+                                </ol>
+                                
+                                <p><strong>VENTAJAS DE LA ESCUELA </strong></p>
+                                
+                                <ol>
+                                    <li>Precios econ&oacute;micos. Desde 14.99&euro; hasta 68&euro;/cada mes.</li>
+                                    <li>Profesor con m&aacute;s de 15 a&ntilde;os de experiencia.</li>
+                                    <li>Alumnos con premios, un finalista del Premio Planeta 2021.</li>
+                                    <li>Taller gratuito para escribir una novela memorable los 3 primeros martes de cada mes para que los alumnos prueben el servicio el tiempo que deseen.</li>
+                                    <li>M&aacute;s de 30 cursos con todos los contenidos necesarios para escribir una novela memorable.</li>
+                                    <li>Chat en la escuela y grupo de Facebook para preguntar dudas.</li>
+                                    <li>V&iacute;deos con las charlas disponibles de la escuela cada semana. <a href="https://www.youtube.com/watch?v=aCLqASvkiJI">Haz clic aqu&iacute;.</a></li>
+                                    <li>Publicaci&oacute;n (gratuita) a final de a&ntilde;o de una antolog&iacute;a con los mejores relatos de los narradores.</li>
+                                    <li>Charlas de destacados narradores. <a href="https://www.youtube.com/watch?v=yAf1VQkejvU">Haz clic aqu&iacute;.</a></li>
+                                    <li>Tutor&iacute;as personalizadas por chat o email.</li>
+                                    <li>Seguimiento personalizado durante la formaci&oacute;n con lecciones extra. <a href="https://www.youtube.com/watch?v=PKfXOJVrElM">Haz clic aqu&iacute;.</a></li>
+                                    <li>Herramienta de creaci&oacute;n de personajes.</li>
+                                </ol>
+                                
+                                <p>Consulta todas las herramientas de la escuela en este v&iacute;deo. <a href="https://www.youtube.com/watch?v=vI8VKBCoVZA">Haz clic aqu&iacute;.</a></p>
+                                
+                                <p><strong>Importante</strong></p>
+                                
+                                <p>La escuela ofrece 4 suscripciones (opci&oacute;n de 39.99&euro; y 68&euro;/mensuales durante 24 meses) que permiten el acceso a todos los cursos. La &uacute;nica diferencia es que la opci&oacute;n de 68&euro; da acceso a encuentros personalizados cada 2 semanas. Adem&aacute;s, los escritores tambi&eacute;n reciben ayuda para organizar y escribir su novela mientras tengan la suscripci&oacute;n activa.</p>
+                                
+                                <p><strong>Suscripci&oacute;n de 29.99&euro; y de 14.99&euro;</strong></p>
+                                
+                                <p>La opci&oacute;n de 29.99&euro; brinda acceso a todos los cursos. Sin embargo, el alumno no contar&aacute; con la gu&iacute;a de un experto para indicarle el curso que debe seguir. En cualquier caso, s&iacute; recibir&aacute; apoyo v&iacute;a email o por chat.</p>
+                                
+                                <p>La opci&oacute;n de 14.99&euro; te brinda acceso a las charlas grabadas (no a los cursos). Tambi&eacute;n podr&aacute;n acceder a las lecciones premium (las clases por videoconferencia) que tienen lugar los mi&eacute;rcoles y jueves.</p>
+                                
+                                <p><strong>OFERTA</strong> <strong>GANA 349&euro;</strong> (para embajadores de la escuela)</p>
+                                
+                                <p>*Es necesario haber realizado al menos 3 ventas para acceder a esta opci&oacute;n.</p>
+                                
+                                <p>Esta oferta est&aacute; disponible solo a trav&eacute;s del sistema de afiliados, con lo cual, tienes una ventaja importante.</p>
+                                
+                                <p>Los usuarios que compren esta oferta tendr&aacute;n acceso a todos los cursos para siempre con un &uacute;nico pago de 699&euro;. El alumno ahorra 260&euro; (acceder&aacute;n a la suscripci&oacute;n de 39.99&euro;)</p>
+                                
+                                <p>En este caso ganar&aacute;s 349&euro;.</p>
+                                
+                                <p><strong>OFERTA GANA EL 50% DE LA SUSCRIPCI&Oacute;N MIENTRAS LOS ALUMNOS PAGUEN </strong></p>
+                                
+                                <p>Para acceder a esta opci&oacute;n env&iacute;a un email a <a href="mailto:info@ray-bolivar-sosa.es">info@ray-bolivar-sosa.es</a> No olvides agregar tu What s up para contactar contigo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+            </div>
+
+
+
+            <!-- SUBSCRIPCION-->
+            <div class="subscription-content  single-content">
+                <div class="row">
+
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="sub-inner">
+                            <div class="title">
+                                <h3>€ 39.99 / mes</h3>
+                            </div>
+                            <p class="des">Ideal para escritores principiantes. Guía personalizada, técnicas narrativas. Sugerencias para optimizar tu novela (nivel intermedio).</p>
+                            <div class="price-text">
+                                <span>€ 39.99 /</span>
+                                Mes durante 24 meses
+                            </div>
+                            <button class="sub-btn btn">Seleccionar plan</button>
+                            <div class="benefits">
+                                <p>Beneficios:</p>
+                                <ul>
+                                    <li>Incluye acceso a todos los cursos</li>
+                                    <li>Incluye acceso a todos los cursos</li>
+                                    <li>Incluye acceso a todos los cursos</li>
+                                    <li>Incluye acceso a todos los cursos</li>
+                                    <li>Tutorías y correcciones personalizadas por email</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="sub-inner">
+                            <div class="title">
+                                <h3>€ 39.99 / mes</h3>
+                            </div>
+                            <p class="des">Ideal para escritores principiantes. Guía personalizada, técnicas narrativas. Sugerencias para optimizar tu novela (nivel intermedio).</p>
+                            <div class="price-text">
+                                <span>€ 39.99 /</span>
+                                Mes durante 24 meses
+                            </div>
+                            <button class="sub-btn btn">Seleccionar plan</button>
+                            <div class="benefits">
+                                <p>Beneficios:</p>
+                                <ul>
+                                    <li>Incluye acceso a todos los cursos</li>
+                                    <li>Incluye acceso a todos los cursos</li>
+                                    <li>Incluye acceso a todos los cursos</li>
+                                    <li>Incluye acceso a todos los cursos</li>
+                                    <li>Tutorías y correcciones personalizadas por email</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="sub-inner">
+                            <div class="title">
+                                <h3>€ 39.99 / mes</h3>
+                            </div>
+                            <p class="des">Ideal para escritores principiantes. Guía personalizada, técnicas narrativas. Sugerencias para optimizar tu novela (nivel intermedio).</p>
+                            <div class="price-text">
+                                <span>€ 39.99 /</span>
+                                Mes durante 24 meses
+                            </div>
+                            <button class="sub-btn btn">Seleccionar plan</button>
+                            <div class="benefits">
+                                <p>Beneficios:</p>
+                                <ul>
+                                    <li>Incluye acceso a todos los cursos</li>
+                                    <li>Incluye acceso a todos los cursos</li>
+                                    <li>Incluye acceso a todos los cursos</li>
+                                    <li>Incluye acceso a todos los cursos</li>
+                                    <li>Tutorías y correcciones personalizadas por email</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="sub-inner">
+                            <div class="title">
+                                <h3>€ 39.99 / mes</h3>
+                            </div>
+                            <p class="des">Ideal para escritores principiantes. Guía personalizada, técnicas narrativas. Sugerencias para optimizar tu novela (nivel intermedio).</p>
+                            <div class="price-text">
+                                <span>€ 39.99 /</span>
+                                Mes durante 24 meses
+                            </div>
+                            <button class="sub-btn btn">Seleccionar plan</button>
+                            <div class="benefits">
+                                <p>Beneficios:</p>
+                                <ul>
+                                    <li>Incluye acceso a todos los cursos</li>
+                                    <li>Incluye acceso a todos los cursos</li>
+                                    <li>Incluye acceso a todos los cursos</li>
+                                    <li>Incluye acceso a todos los cursos</li>
+                                    <li>Tutorías y correcciones personalizadas por email</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+            <!-- SETTING -->
+
+
+
+
+
+
+            <!-- dropdown contents -->
+            <!-- dropdown contents -->
+            <!-- dropdown contents -->
+            <!-- dropdown contents -->
+
+
+            <!-- Videos content -->
+            <div class="video-content single-content">
+                <div class="row">
+                    <div class="col-12 video-bar">
+                        <a href="#">category</a>
+                        <a href="#">category</a>
+                        <a href="#">category</a>
+                    </div>
+                    <div class="col-md-4 single-video">
+                        <iframe class="running-video" src="https://www.youtube.com/embed/ft7FbMC_xSg" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-md-4">
+                        <iframe class="running-video" src="https://www.youtube.com/embed/ft7FbMC_xSg" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-md-4">
+                        <iframe class="running-video" src="https://www.youtube.com/embed/ft7FbMC_xSg" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-md-4">
+                        <iframe class="running-video" src="https://www.youtube.com/embed/ft7FbMC_xSg" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- profile content -->
+            <div class="profile-content single-content">
+                <section class="profile-header">
+                    <div class="container">
+                        <div class="profile-img-wraper">
+                            <div class="cover-img">
+                                <img src="https://images.pexels.com/photos/1029604/pexels-photo-1029604.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="cover-img">
+                                <i class="fas fa-camera" data-toggle="tooltip" data-placement="right" title="Change Cover Photo" ></i>
+                            </div>
+                            <div class="profile-img">
+                                <img src="img/deafult-profile.png" alt="" class="img-fluid">
+                                <div class="change-profile-img">
+                                    <i class="fas fa-camera" data-toggle="tooltip" data-placement="bottom" title="Change Profile Photo"></i>
+                                </div>
+                            </div>
+                            
+                            <div class="info">
+                                <h2 class="name">John</h2>
+                                <div class="row px-3 justify-content-between align-items-center">
+                                    <div class="col-md">
+                                        <div class="follow justify-content-lg-start justify-content-center">
+                                            <p class="mr-3"><span>13</span>followers</p>
+                                            <p><span>16</span>following</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md">
+                                        <div class="join mb-3 mb-lg-0">
+                                            <span>@john</span> • Joined <span>Jan 2023</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md">
+                                        <div class="social-links text-lg-right">
+                                            <a href="#" class="mr-3" aria-label="Facebook" data-microtip-position="top" role="tooltip"><i class="fab fa-facebook-f"></i></a>
+                                            <a href="#" class="mr-3" aria-label="YouTube" data-microtip-position="top" role="tooltip"><i class="fab fa-youtube"></i></a>
+                                            <a href="#" aria-label="Twitter" data-microtip-position="top" role="tooltip"><i class="fab fa-twitter"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="nav-section">
+                    <div class="container">
+                        <div class="row px-4 justify-content-between">
+                            <a href="#">Histórico</a>
+                            <a href="#" class="active">Perfil</a>
+                            <a href="#">Conexiones <span>130</span></a>
+                            <a href="#">Grupos <span>13</span></a>
+                            <a href="#">Mis historias</a>
+                            <a href="#">Comunidad</a>
+                        </div>
+                    </div>
+                </section>
+                <section class="profile-info">
+                    <div class="container">
+                        <div class="profile-content-info-wraper">
+                            <div class="title">
+                                <div class="row align-items-center justify-content-between">
+                                    <p>Información general</p>
+                                    <button class="btn edit-btn">Edit</button>
+                                </div>
+                            </div>
+                            <div class="content-infos">
+                                <div class="row mt-4">
+                                    <div class="col p-0 tag">Nombre</div>
+                                    <div class="col main-info">John</div>
+                                </div>
+                                <div class="row mt-4">
+                                    <div class="col p-0 tag">Apellido</div>
+                                    <div class="col main-info">John</div>
+                                </div>
+                                <div class="row mt-4">
+                                    <div class="col p-0 tag">Seudónimo</div>
+                                    <div class="col main-info">John</div>
+                                </div>
+                                <div class="row mt-4">
+                                    <div class="col p-0 tag">Fecha de nacimiento</div>
+                                    <div class="col main-info">John</div>
+                                </div>
+                                <div class="row mt-4">
+                                    <div class="col p-0 tag">Género</div>
+                                    <div class="col main-info">John</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile-content-info-wraper">
+                            <div class="title">
+                                <div class="row align-items-center justify-content-between">
+                                    <p>Work Experience</p>
+                                    <button class="btn edit-btn">Edit</button>
+                                </div>
+                            </div>
+                            <div class="content-infos">
+                                <div class="row mt-4">
+                                    <div class="col p-0 tag">Company Name</div>
+                                    <div class="col main-info">Manager</div>
+                                </div>
+                                <div class="row mt-4">
+                                    <div class="col p-0 tag">Job Title</div>
+                                    <div class="col main-info">Manager</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile-content-info-wraper">
+                            <div class="title">
+                                <div class="row align-items-center justify-content-between">
+                                    <p>Biography</p>
+                                    <button class="btn edit-btn">Edit</button>
+                                </div>
+                            </div>
+                            <div class="content-infos">
+                                <div class="row mt-4">
+                                    <div class="col-3 p-0 tag">Biography</div>
+                                    <div class="col main-info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum facilis excepturi iste voluptas officiis quibusdam corporis labore laudantium nostrum quas.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+
+            <!-- facturas content -->
+            <div class="facturas-content single-content">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">Sr No.</th>
+                            <th scope="col">Order Date</th>
+                            <th scope="col">Amount</th>
+                            <th scope="col">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>100</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>19</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>34</td>
+                            <td>@twitter</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Larry</td>
+                            <td>60</td>
+                            <td>@twitter</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+
+            <!--  Lista de deseos -->
+            <div class="lista-de-content single-content">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">Sr No.</th>
+                            <th scope="col">ID</th>
+                            <th scope="col">Course</th>
+                            <th scope="col">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+
+            <!--  certificates -->
+            <div class="certificates-content single-content">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">Sr No.</th>
+                            <th scope="col">ID</th>
+                            <th scope="col">Course</th>
+                            <th scope="col">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>1001</td>
+                            <td>La teoría del iceberg</td>
+                            <td><button class="btn btn-primary btn-sm mr-3">View</button><button class="btn btn-success btn-sm">Download</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>1002</td>
+                            <td>La teoría del iceberg</td>
+                            <td><button class="btn btn-primary btn-sm mr-3">View</button><button class="btn btn-success btn-sm">Download</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>1003</td>
+                            <td>La teoría del iceberg</td>
+                            <td><button class="btn btn-primary btn-sm mr-3">View</button><button class="btn btn-success btn-sm">Download</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>1004</td>
+                            <td>La teoría del iceberg</td>
+                            <td><button class="btn btn-primary btn-sm mr-3">View</button><button class="btn btn-success btn-sm">Download</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+
+            <!-- coming soon -->
+            <div class="comming-soon-content single-content">
+                <h1 class="display-3">Comming soon...</h1>
+            </div>
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- help popup -->
+        <div class="help-popup-wraper">
+            <div class="videos-popup">
+
+                <div class="topbar">
+                    <div class="row m-0 px-3 justify-content-between">
+                        <div class="search-box">
+                            <input type="text" placeholder="Search">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <i class="fas fa-times close-btn"></i>
+                    </div>
+                </div>
+                <div class="video-section">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="current-video mb-0" style="height: 70vh;">
+                                <iframe class="running-video" src="https://www.youtube.com/embed/ft7FbMC_xSg" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="playlist mb-0" style="height: 70vh;">
+                                <h2 class="head">Related articles</h2>
+                                <a class="active" href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas fugiat nobis ducimus ab eum aut?</a>
+                                <a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas fugiat nobis ducimus ab eum aut?</a>
+                                <a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas fugiat nobis ducimus ab eum aut?</a>
+                                <a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas fugiat nobis ducimus ab eum aut?</a>
+                                <a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas fugiat nobis ducimus ab eum aut?</a>
+                                <a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas fugiat nobis ducimus ab eum aut?</a>
+                                <a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas fugiat nobis ducimus ab eum aut?</a>
+                                <a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas fugiat nobis ducimus ab eum aut?</a>
+                                <a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas fugiat nobis ducimus ab eum aut?</a>
+                                <a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas fugiat nobis ducimus ab eum aut?</a>
+                                <a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas fugiat nobis ducimus ab eum aut?</a>
+                                <a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas fugiat nobis ducimus ab eum aut?</a>
+                                <a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas fugiat nobis ducimus ab eum aut?</a>
+                                <a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas fugiat nobis ducimus ab eum aut?</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- all videos popup -->
+        <div class="videos-popup-wraper">
+            <div class="videos-popup">
+
+                <div class="topbar">
+
+                    <div class="row m-0">
+                        <div class="col-md-9">
+                            <div class="title">
+                                <p class="head">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, placeat?</p>
+                                <p class="des">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repellendus molestiae cupiditate unde nihil. Libero nisi ipsa impedit doloremque ipsam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque voluptatem facilis rem distinctio? Excepturi nobis quasi libero itaque sequi sed!</p>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-3 p-0">
+                            <div class="skill">
+                                
+                                <div class="video-popup-progress ml-lg-auto">
+                                    <div class="d-flex justify-content-between px-1">
+                                        <p class="info-user">Reto (del día)</p>
+                                        <p class="info-number">4/6</p>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="video-popup-progress-card d-flex align-items-center justify-content-between">
+                                        <img style="max-width: 37px;" src="icons8-fire.gif" alt="" class="img-fluid">
+                                        <p>Ganar el reto</p>
+                                    </div>
+                                    <div class="video-popup-progress-card d-flex align-items-center justify-content-between">
+                                        <img style="max-width: 40px;" src="diamond.gif" alt="" class="img-fluid">
+                                        <p>Ganar el reto</p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+                <div class="video-section">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="current-video">
+                                <iframe class="running-video" src="https://www.youtube.com/embed/ft7FbMC_xSg" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            
+                            <div class="d-flex align-content-center justify-content-between">
+                                <button class="btn prev control-btn"><i class="fas fa-long-arrow-alt-left mr-2"></i> Vídeo anterior</button>
+                                <button class="btn next control-btn">Siguiente vídeo <i class="fas fa-long-arrow-alt-right ml-2"></i></button>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="playlist">
+                                <a class="active" href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas fugiat nobis ducimus ab eum aut?</a>
+                                <a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas fugiat nobis ducimus ab eum aut?</a>
+                                <a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas fugiat nobis ducimus ab eum aut?</a>
+                                <a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas fugiat nobis ducimus ab eum aut?</a>
+                                <a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas fugiat nobis ducimus ab eum aut?</a>
+                                <a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas fugiat nobis ducimus ab eum aut?</a>
+                                <a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas fugiat nobis ducimus ab eum aut?</a>
+                                <a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas fugiat nobis ducimus ab eum aut?</a>
+                                <a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas fugiat nobis ducimus ab eum aut?</a>
+                                <a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas fugiat nobis ducimus ab eum aut?</a>
+                                <a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas fugiat nobis ducimus ab eum aut?</a>
+                                <a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas fugiat nobis ducimus ab eum aut?</a>
+                                <a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas fugiat nobis ducimus ab eum aut?</a>
+                                <a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas fugiat nobis ducimus ab eum aut?</a>
+                            </div>
+                            <div class="text-right">
+                                <button class="btn close-btn">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+
+
+        <!-- mini price when click update button -->
+        <div class="mini-price">
+            <i class="fas fa-caret-up"></i>
+            <div class="row m-0">
+                <div class="col-lg-3 col-md-6 col-sm-12 mini-price-single">
+                    <p class="head">Principiante</p>
+                    <p class="title">Ideal para probar</p>
+                    <p class="price">9.99€/mes</p>
+                    <button onclick="popShow()" class="price-btn btn">Empezar prueba gratis</button>
+                    <a class="detail" href="#">Detalles</a>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mini-price-single">
+                    <p class="head">Aprendices</p>
+                    <p class="title">Empieza tu carrera</p>
+                    <p class="price">18.99€/mes</p>
+                    <button onclick="popShow()"  class="price-btn btn">Empezar prueba gratis</button>
+                    <a class="detail" href="#">Detalles</a>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mini-price-single">
+                    <p class="head">Escritores</p>
+                    <p class="title">Estrellas en ascenso</p>
+                    <p class="price">29.99€/mes</p>
+                    <button onclick="popShow()" class="price-btn btn">Empezar prueba gratis</button>
+                    <a class="detail" href="#">Detalles</a>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mini-price-single">
+                    <p class="head">Consagrados</p>
+                    <p class="title">Ganar el Planeta</p>
+                    <p class="price">39.99€/mes</p>
+                    <button onclick="popShow()" class="price-btn btn">Empezar prueba gratis</button>
+                    <a class="detail" href="#">Detalles</a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- payment popup -->
+        <div class="latest-payement-popup-wraper">
+            <div class="latest-payment-popup">
+                <h1>Desbloquea Todas Las Funciones Y Comienza A Usarlas En Menos De 60 Segundos</h1>
+                <div class="pop">
+                    <i class="fas fa-times"></i>
+                    <div class="radio">
+                        <div class="single-option">
+                            <p class="title">Pequeñas empresas - Mensual</p>
+                            <p class="per">$20 <span>Ahorra 70%</span></p>
+                            <p class="des">Prueba de 7 días gratis, libre de riesgo</p>
+                            <p class="des">Cancela cuando quieras</p>
+                        </div>
+                    </div>
+                    <form action="">
+                        <label class="head" for="">Ingresa tu tarjeta de crédito o débito</label>
+                        <input type="text">
+                        <input type="submit" class="submit-btn" value="Empezar mi prueba gratis">
+                    </form>
+                    <div class="c-right">
+                        Actualizandote a la versión superior, aceptas 
+                        <a href="#">Política de privacidad</a> y <a href="#">Términos y condiciones.</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+<!-- requirment popup -->
+<!-- <div class="single-popup-wraper requirment-popup">
+    <div class="single-popup">
+        <h6 class="title">Aprendizaje de la semana</h6>
+        <div class="body">
+            <div>Para un óptimo aprendizaje deberás ver un mínimo de 4 vídeos cada semana. Un total de 30 o 45 minutos.</div>
+            <div class="text-right">
+                <button class="btn btn-sm bg-btn">De acuerdo</button>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<!-- Exercise popup -->
+<!-- <div class="single-popup-wraper exercise-popup">
+    <div class="single-popup">
+        <h6 class="title">Activa la opción para realizar ejercicios.</h6>
+        <div class="body">
+            <div>Acelera el aprendizaje un 90 %</div>
+            <div class="text-right">
+                <button class="btn btn-sm bg-btn mr-2">SI</button>
+                <button class="btn btn-sm btn-outline-danger">NO</button>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- assignment popup -->
+<div class="single-popup-wraper assignment-popup">
+    <div class="single-popup">
+        <i class="fas fa-times"></i>
+        <h6 class="title">Exercise 1</h6>
+        <div class="body">
+            <div class="row align-items-center justify-content-between">
+                <p class="head">Escribe un inicio no mayor de 1 folio</p>
+                <p style="font-size: 14px;">Final delivery date : <span style="font-weight: 500;"> 3 days.</span></p>
+            </div>
+            
+            <textarea class="assignment-area" placeholder="Start writing here..."></textarea>
+            <div class="row align-items-center justify-content-between">
+                <div>
+                    <button class="btn btn-sm bg-btn mr-2">Submit</button>
+                    <button class="btn btn-sm btn-outline-danger">Cancel</button>
+                </div>
+                <p style="font-size: 14px;"><span style="font-weight: 500;">Una vez realizado el ejercicio recibirán la corrección correspondiente.</span>  by Ray</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- fomo popup -->
+<div class="mini-formo-popup dashboard-fomo">
+    <i onclick="closeFomo()" class="fas fa-times"></i>
+    <div class="profile">
+        <img src="" alt="" class="img-fluid">
+    </div>
+    <div class="info">
+        <p class="author"></p>
+        <p class="des"></p>
+        <div class="footer">
+            <p class="time"></p>
+            <button class="btn check-btn btn-sm"><a href="" target="_blank"></a></button>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<!-- jquery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- owl carousel -->
+<script src="js/owl.carousel.min.js"></script>
+
+
+
+<!-- triger owl carousel -->
+<script>
+    $(document).ready(function(){
+    $(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+            items:3,
+            loop:true,
+            autoplay:true,
+            autoplayTimeout:3000,
+            autoplayHoverPause:true,
+            nav:false,
+            smartSpeed:1000,
+            animateOut:'',
+            animateIn:'',
+            stagePadding:0,
+            margin:0,
+
+            
+            responsiveClass:true,
+                    responsive:{
+                        0:{
+                            items:1,
+                            nav:false,
+                            dots:false,
+                        },
+                        600:{
+                            items:1,
+                            nav:false,
+                        },
+                        1000:{
+                            items:3,
+                            nav:false,
+                        }
+                    }
+        });
+        
+        });
+});
+</script>
+
+
+
+<script>
+
+
+    
+
+
+
+    // show hide function
+    const showHide = (classOfShowBtn,classOfTheDiv,classOfHideBtn)=>{
+        const theShowBtn = document.querySelector(`.${classOfShowBtn}`);
+        const theHideBtn = document.querySelector(`.${classOfHideBtn}`);
+        const theDiv = document.querySelector(`.${classOfTheDiv}`);
+        theShowBtn.addEventListener('click',()=>{
+            theDiv.style.cssText = 'display:block';
+        })
+        theHideBtn.addEventListener('click',()=>{
+            theDiv.style.cssText = 'display:none';
+        })
+    }
+    // help popup show hide
+    showHide('help-btn','help-popup-wraper','close-btn');
+
+
+
+    // sidebar active class toggle
+    const sidebarList = document.querySelectorAll('.list');
+    for(let i=0; i<sidebarList.length; i++){
+        sidebarList[i].addEventListener('click',()=>{
+            let j = 0;
+            while(j<sidebarList.length){
+                sidebarList[j++].className = 'list';
+            }
+            sidebarList[i].className = 'list active';
+        })
+    }
+
+    document.querySelector('#dashborad-toogle-btn').addEventListener('click',()=>{
+        document.querySelector('.new-sidebar').classList.toggle('expand');
+    });
+
+
+
+    // landing carousel keyword
+    const keyButton = document.querySelectorAll('.landing-video-carousel .keywords span');
+
+    for(let i=0; i<keyButton.length; i++){
+        keyButton[i].addEventListener('click',(e)=>{
+            e.target.classList.toggle('key-active')
+        })
+    }
+
+    // upgrade button 
+    let upgradeBtn = document.querySelector('.upgrade-btn');
+    upgradeBtn.addEventListener('click',()=>{
+        document.querySelector('.mini-price').classList.toggle('show');
+    })
+
+
+    // payment popup open
+    const popShow = ()=>{
+        document.querySelector('.latest-payement-popup-wraper').style.cssText = "display:block";
+        document.querySelector('.latest-payement-popup-wraper i').addEventListener('click',()=>{
+            document.querySelector('.latest-payement-popup-wraper').style.cssText = "display:none";
+        })
+    }
+
+
+
+    // landing box toggle
+    const box1 = document.querySelector('.landing-single-box1');
+    const box2 = document.querySelector('.landing-single-box2');
+    const box3 = document.querySelector('.landing-single-box3');
+    const box4 = document.querySelector('.landing-single-box4');
+    
+    const box1Button = document.querySelector('.landing-single-box1>.landing-box .procced-btn');
+    box1Button.addEventListener('click',()=>{
+        box2.classList.toggle('show');
+        box3.classList.toggle('show');
+        box4.classList.toggle('show');
+    })
+
+
+    // video popup
+    const videoPopupCloseBtn = document.querySelector('.video-section .close-btn');
+    const videoPopupWraper = document.querySelector('.videos-popup-wraper');
+
+    const openPop = ()=>{
+        videoPopupWraper.style.cssText = 'display:block;';
+    }
+
+
+    videoPopupCloseBtn.addEventListener('click',()=>{
+        videoPopupWraper.style.cssText = 'display:none;';
+    });
+
+
+    const playListActive = document.querySelectorAll('.video-section .playlist a');
+
+    for(let i=0; i<playListActive.length; i++){
+        playListActive[i].addEventListener('click',(e)=>{
+            for(let j=0; j<playListActive.length; j++){
+                playListActive[j].classList.remove('active');
+            }
+            e.target.classList.add('active')
+        })
+    }
+
+
+
+
+
+
+    // active content
+
+    const allSingleContent = document.querySelectorAll('.single-content');
+
+    const showContent = (contentClass)=>{
+        for(let i=0; i<allSingleContent.length; i++){
+            allSingleContent[i].style.display = 'none';
+        }
+        document.querySelector(`.${contentClass}`).style.display = 'block'
+    }
+
+    const listBtn = document.querySelectorAll('.new-sidebar .list');
+
+
+    // startup
+    listBtn[0].addEventListener('click',function (){
+        showContent('landing')
+    })
+
+    // dashboard
+    listBtn[1].addEventListener('click',function (){
+        showContent('dashboard-content')
+    })
+
+    // objective
+    listBtn[2].addEventListener('click',function (){
+        showContent('objective-content')
+    })
+
+    // accesories
+    listBtn[3].addEventListener('click',function (){
+        showContent('comming-soon-content')
+    })
+
+    // mis libros
+    listBtn[4].addEventListener('click',function (){
+        showContent('mis-libros-content')
+    })
+
+    // puntos
+    listBtn[5].addEventListener('click',function (){
+        showContent('puntos-content')
+    })
+
+    // afiliacion
+    listBtn[6].addEventListener('click',function (){
+        showContent('affiliate-content')
+    })
+
+    // subscription
+    listBtn[7].addEventListener('click',function (){
+        showContent('subscription-content')
+    })
+
+    // settings
+    listBtn[8].addEventListener('click',function (){
+        showContent('comming-soon-content')
+    })
+
+
+    // right dropdown
+    document.getElementById('video-content-btn').addEventListener('click',function (){
+        showContent('video-content')
+    })
+    document.getElementById('lista-de-content-btn').addEventListener('click',function (){
+        showContent('lista-de-content')
+    })
+    document.getElementById('certificates-content-btn').addEventListener('click',function (){
+        showContent('certificates-content')
+    })
+    document.getElementById('profile-content-btn').addEventListener('click',function (){
+        showContent('profile-content')
+    })
+    document.getElementById('facturas-content-btn').addEventListener('click',function (){
+        showContent('facturas-content')
+    })
+
+
+
+
+
+    // remove active class when click on dropdown items
+    const dropdownItems = document.querySelectorAll('.user-img-wraper .drop-inner>a');
+    const sidebarLinks= document.querySelectorAll('.new-sidebar ul li');
+    
+    for(let i =0; i<dropdownItems.length; i++){
+        dropdownItems[i].addEventListener('click',()=>{
+            for(let j=0; j<sidebarLinks.length; j++){
+                sidebarLinks[j].classList.remove('active');
+            }
+        })
+    }
+
+
+
+
+
+    // startup affiliate
+    document.querySelector('.affiliate-btn').addEventListener('click',()=>{
+        for(let j=0; j<sidebarLinks.length; j++){
+            sidebarLinks[j].classList.remove('active');
+        }
+        listBtn[6].classList.add('active')
+        showContent('affiliate-content')
+    })
+
+
+
+    // active heart icon on objetivo
+    const objHeartIcon = document.querySelectorAll('.object-lavel-card .icons .fa-heart');
+    for(let i=0; i<objHeartIcon.length; i++){
+        objHeartIcon[i].addEventListener('click',function(){
+            this.classList.toggle('fas')
+        })
+    }
+    
+
+
+    // close popup on click outside
+    document.addEventListener('click',(e)=>{
+        // payment dropdow
+        if(!e.target.closest('.upgrade-btn') && !e.target.closest('.mini-price') && !e.target.closest('.landing-box-wraper')){
+            document.querySelector('.mini-price').classList.remove('show');
+        }
+
+        // sidebar
+        if(!e.target.closest('#dashborad-toogle-btn') && !e.target.closest('.new-sidebar')){
+            document.querySelector('.new-sidebar').classList.remove('expand');
+        }
+        
+    })
+
+// landing boxs color
+    const landingBoxs = document.querySelectorAll('.landing-box img')
+    for(let i=0; i < landingBoxs.length; i++){
+        if(landingBoxs[i].src.includes('writepng')){
+            landingBoxs[i].closest('.landing-box').style.background = '#FFB2B2';
+        }else if(landingBoxs[i].src.includes('tech')){
+            landingBoxs[i].closest('.landing-box').style.background = '#F9C114';
+        }else if(landingBoxs[i].src.includes('coins')){
+            landingBoxs[i].closest('.landing-box').style.background = '#B984FF';
+        }else if(landingBoxs[i].src.includes('award')){
+            landingBoxs[i].closest('.landing-box').style.background = '#4AD3FF';
+        }else{
+            landingBoxs[i].closest('.landing-box').style.background = '#4AD3FF';
+        }
+
+    }
+
+
+
+
+
+
+</script>
+
+
+
+<script src="js/fomo.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+</html>
