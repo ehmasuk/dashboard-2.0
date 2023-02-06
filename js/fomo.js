@@ -1,75 +1,81 @@
+
+
+
+
+
+
 const fomoData = [
     {
         name: "María",
         img: "https://i.pravatar.cc/100?img=44",
-        task: "Brought a couse with a discount of 10%",
-        time: "Just now",
+        task: "Compró un curso con un descuento del 10%",
+        time: "Ahora mismo",
         target: "https://escuela-ray-bolivar-sosa.com/",
-        btn:'Check',
+        btn:'Revisa',
     },
     {
         name: "Liliana",
         img: "https://i.pravatar.cc/100?img=49",
-        task: "Started a free trial",
-        time: "Just now",
+        task: "Comenzó una prueba gratuita de 7 días.",
+        time: "Ahora mismo",
         target: "https://escuela-ray-bolivar-sosa.com/",
-        btn:'Check',
+        btn:'Revisa',
     },
     {
         name: "Dayana",
         img: "https://i.pravatar.cc/100?img=42",
-        task: "Started a free trial",
-        time: "10 min ago",
-        btn:'check',
+        task: "Compró un curso con un descuento del 10%",
+        time: "Hace 10 minutos",
+        btn:'Revisa',
         target: "https://escuela-ray-bolivar-sosa.com/",
     },
     {
         name: "José",
         img: "https://i.pravatar.cc/100?img=3",
-        task: "Started a free trial",
-        time: "a minute ago",
-        btn:'Check',
+        task: "Comenzó una prueba gratuita de 7 días.",
+        time: "Hace un minuto",
+        btn:'Revisa',
         target: "https://escuela-ray-bolivar-sosa.com/",
     },
     {
         name: "Pedro",
         img: "https://i.pravatar.cc/100?img=13",
-        task: "Started a free trial",
-        time: "30 min ago",
-        btn:'Check',
+        task: "Compró un curso con un descuento del 10%",
+        time: "Hace 30 minutos",
+        btn:'Revisa',
         target: "https://escuela-ray-bolivar-sosa.com/",
     },
     {
         name: "Diego",
         img: "https://i.pravatar.cc/100?img=52",
-        task: "Started a free trial",
-        time: "4 hour ago",
-        btn:'Check',
+        task: "Comenzó una prueba gratuita de 7 días.",
+        time: "Hace 4 horas",
+        btn:'Revisa',
         target: "https://escuela-ray-bolivar-sosa.com/",
     },
     {
         name: "Livia",
         img: "https://i.pravatar.cc/100?img=46",
-        task: "Started a free trial",
-        time: "2 hour ago",
-        btn:'Check',
+        task: "Comenzó una prueba gratuita de 7 días.",
+        time: "Hace dos horas",
+        btn:'Revisa',
         target: "https://escuela-ray-bolivar-sosa.com/",
     },
     {
         name: "Paloma",
         img: "https://i.pravatar.cc/100?img=42",
-        task: "Started a free trial",
-        time: "an hour ago",
-        btn:'Check',
+        task: "Comenzó una prueba gratuita de 7 días.",
+        time: "Hace una hora",
+        btn:'Revisa',
         target: "https://escuela-ray-bolivar-sosa.com/",
     },
     {
-        name: "31 active users",
+        name: `${activeUsers(30,90)} usuarios activos`,
         img: "img/book.gif",
         task: "",
         time: "escuela-ray-bolivar-sosa.com",
         target: "",
-        btn:'Home'
+        btn:''
     },
 ];
 
@@ -111,6 +117,12 @@ setInterval(() => {
     showFomo();
     closeFomoFunc();
 }, 15000);
+
+
+
+function activeUsers(min,max){
+    return Math.floor(Math.random() * (max - min + 1)) + min
+}
 
 
 
