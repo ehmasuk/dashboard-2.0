@@ -19,6 +19,9 @@
         <!-- microtip -->
         <link rel="stylesheet" href="css/tooltip.css">
 
+        <!-- fomo -->
+        <script src="js/dashboard.fomo.js"></script>
+
         <title>Dashboard 2.0</title>
     </head>
     <body>
@@ -27,6 +30,9 @@
 <!-- font-family: 'Abel', sans-serif; -->
 <!-- font-family: 'Inter', sans-serif; -->
 <!-- font-family: 'Roboto', sans-serif; -->
+
+
+<!-- offer bar -->
 <div class="offer-bar">
     <p>Periodo de prueba 7 días</p>
     <button class="btn"><a href="#">Consultar planes</a></button>
@@ -95,6 +101,8 @@
                         <span class="title">Startup</span>
                     </a>
                 </li>
+
+
                 <li class="list">
                     <b></b>
                     <b></b>
@@ -166,6 +174,33 @@
                         <span class="title">Suscripcion</span>
                     </a>
                 </li>
+
+
+
+                <!-- my courses -->
+                <li class="list">
+                    <b></b>
+                    <b></b>
+                    <a href="#">
+                        <span class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 4.707c-2.938-1.83-7.416-2.567-12-2.707v17.714c3.937.12 7.795.681 10.667 1.995.846.388 1.817.388 2.667 0 2.872-1.314 6.729-1.875 10.666-1.995v-17.714c-4.584.14-9.062.877-12 2.707zm-1 14.902c-1.525-.546-4.716-1.505-9-1.799v-13.703c5.156.389 7.527 1.463 9 2.334v13.168zm11-1.798c-4.283.293-7.475 1.252-9 1.799v-13.171c.868-.515 2.072-1.107 4-1.584v6.145l1.5-1.5 1.5 1.5v-6.691c.617-.079 1.279-.148 2-.202v13.704z"/></svg>
+                        </span>
+                        <span class="title">My Courses</span>
+                    </a>
+                </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
                 <li class="list">
                     <b></b>
                     <b></b>
@@ -176,6 +211,14 @@
                         <span class="title">Setting</span>
                     </a>
                 </li>
+
+
+
+
+
+
+
+
 
 
             </ul>
@@ -1317,8 +1360,49 @@
 
 
 
+            <!-- my offers content-->
 
+            <div class="myoffers-content single-content">
 
+                <h4 class="m-4 pb-3">My Courses</h4>
+                <div class="row">
+
+                    <div class="col-lg-6">
+                        <div class="single-got-course">
+                            <div class="course-img">
+                                <img src="https://images.pexels.com/photos/4195504/pexels-photo-4195504.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                            </div>
+                            <div class="course-infos">
+                                <div class="batch">Gratis</div>
+                                <p class="c-name">Lorem ipsum dolor sit, amet consectetur</p>
+                                <div class="row justify-content-between align-items-center my-3">
+                                    <div>
+                                        <img src="https://escuela-ray-bolivar-sosa.com/newtheme/images/59f9b8d60fe1f-bpfull6fb4.jpg" alt="" class="author">
+                                        Ray Bolivar
+                                    </div>
+                                    <div>
+                                        <i class="far fa-clock"></i>
+                                        13H
+                                    </div>
+                                    <div>
+                                        <i class="far fa-star"></i>
+                                        4.5
+                                    </div>
+                                </div>
+                                <div class="course-progress">
+                                    <p class="c-label">Completado</p>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated w-75"> 75% </div>
+                                    </div>
+                                </div>
+        
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
 
 
 
@@ -1935,7 +2019,7 @@
         <p class="des"></p>
         <div class="footer">
             <p class="time"></p>
-            <button class="btn check-btn btn-sm"><a href="" target="_blank"></a></button>
+            <button class="btn check-btn btn-sm"></button>
         </div>
     </div>
 </div>
@@ -2162,8 +2246,13 @@
         showContent('subscription-content')
     })
 
-    // settings
+    // my offers
     listBtn[8].addEventListener('click',function (){
+        showContent('myoffers-content')
+    })
+
+    // settings
+    listBtn[9].addEventListener('click',function (){
         showContent('comming-soon-content')
     })
 
@@ -2229,7 +2318,14 @@
     // close popup on click outside
     document.addEventListener('click',(e)=>{
         // payment dropdow
-        if(!e.target.closest('.upgrade-btn') && !e.target.closest('.mini-price') && !e.target.closest('.landing-box-wraper')){
+        if(
+            !e.target.closest('.upgrade-btn') && 
+            !e.target.closest('.mini-price') && 
+            !e.target.closest('.landing-box-wraper') &&
+            !e.target.closest('.dashboard-fomo') &&
+            !e.target.closest('.offer-bar')
+            ){
+            document.querySelector('.mini-price').style.display ='none';
             document.querySelector('.mini-price').classList.remove('show');
         }
 
@@ -2266,7 +2362,7 @@
 
 
 
-<script src="js/fomo.js"></script>
+
 
 
 

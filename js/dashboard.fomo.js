@@ -1,33 +1,29 @@
 
 
-
-
-
-
 const fomoData = [
     {
         name: "María",
         img: "https://i.pravatar.cc/100?img=44",
         task: "Compró un curso con un descuento del 10%",
         time: "Ahora mismo",
-        target: "https://escuela-ray-bolivar-sosa.com/subscription/price_plans#price-section",
         btn:'Comprar',
+        btnFunction : ()=>document.querySelector('.mini-price').classList.add('show')
     },
     {
         name: "Liliana",
         img: "https://i.pravatar.cc/100?img=49",
         task: "Comenzó una prueba gratuita de 7 días.",
         time: "Ahora mismo",
-        target: "https://escuela-ray-bolivar-sosa.com/subscription/price_plans#price-section",
         btn:'Empezar',
+        btnFunction : ()=>document.querySelector('.mini-price').classList.add('show')
     },
     {
         name: "Dayana",
-        img: "https://i.pravatar.cc/100?img=42",
+        img: "https://escuela-ray-bolivar-sosa.com/newtheme/dashbaord/img/woman.png",
         task: "Compró un curso con un descuento del 10%",
         time: "Hace 10 minutos",
         btn:'Comprar',
-        target: "https://escuela-ray-bolivar-sosa.com/subscription/price_plans#price-section",
+        btnFunction : ()=>document.querySelector('.mini-price').classList.add('show')
     },
     {
         name: "José",
@@ -35,15 +31,15 @@ const fomoData = [
         task: "Comenzó una prueba gratuita de 7 días.",
         time: "Hace un minuto",
         btn:'Empezar',
-        target: "https://escuela-ray-bolivar-sosa.com/subscription/price_plans#price-section",
+        btnFunction : ()=>document.querySelector('.mini-price').classList.add('show')
     },
     {
         name: "Pedro",
-        img: "https://i.pravatar.cc/100?img=13",
+        img: "https://escuela-ray-bolivar-sosa.com/newtheme/dashbaord/img/man.png",
         task: "Compró un curso con un descuento del 10%",
         time: "Hace 30 minutos",
         btn:'Empezar',
-        target: "https://escuela-ray-bolivar-sosa.com/subscription/price_plans#price-section",
+        btnFunction : ()=>document.querySelector('.mini-price').classList.add('show')
     },
     {
         name: "Diego",
@@ -51,31 +47,31 @@ const fomoData = [
         task: "Comenzó una prueba gratuita de 7 días.",
         time: "Hace 4 horas",
         btn:'Empezar',
-        target: "https://escuela-ray-bolivar-sosa.com/subscription/price_plans#price-section",
+        btnFunction : ()=>document.querySelector('.mini-price').classList.add('show')
     },
     {
-        name: "Livia",
-        img: "https://i.pravatar.cc/100?img=46",
+        name: "Martín",
+        img: "https://escuela-ray-bolivar-sosa.com/newtheme/dashbaord/img/man.png",
         task: "Comenzó una prueba gratuita de 7 días.",
         time: "Hace dos horas",
         btn:'Empezar',
-        target: "https://escuela-ray-bolivar-sosa.com/subscription/price_plans#price-section",
+        btnFunction : ()=>document.querySelector('.mini-price').classList.add('show')
     },
     {
         name: "Paloma",
-        img: "https://i.pravatar.cc/100?img=42",
+        img: "https://escuela-ray-bolivar-sosa.com/newtheme/dashbaord/img/woman.png",
         task: "Comenzó una prueba gratuita de 7 días.",
         time: "Hace una hora",
         btn:'Empezar',
-        target: "https://escuela-ray-bolivar-sosa.com/subscription/price_plans#price-section",
+        btnFunction : ()=>document.querySelector('.mini-price').classList.add('show')
     },
     {
         name: `${activeUsers(30,90)} usuarios activos`,
-        img: "img/book.gif",
+        img: "https://escuela-ray-bolivar-sosa.com/newtheme/dashbaord/img/book.gif",
         task: "",
+        btn:'',
         time: "escuela-ray-bolivar-sosa.com",
-        target: "",
-        btn:''
+        btnFunction : ()=>document.querySelector('.mini-price').classList.add('show')
     },
 ];
 
@@ -87,13 +83,13 @@ function newFomo() {
     const fomoAuthor = document.querySelector(".mini-formo-popup .info .author");
     const fomoTime = document.querySelector(".mini-formo-popup .info .time");
     const fomoDes = document.querySelector(".mini-formo-popup .info .des");
-    const fomoTarget = document.querySelector(".mini-formo-popup .info .check-btn a");
+    const fomoTarget = document.querySelector(".mini-formo-popup .info .check-btn");
     fomoImg.src = fomoData[fomoNUmber].img;
     fomoAuthor.innerText = fomoData[fomoNUmber].name;
     fomoTime.innerText = fomoData[fomoNUmber].time;
     fomoDes.innerText = fomoData[fomoNUmber].task;
     fomoTarget.innerText = fomoData[fomoNUmber].btn;
-    fomoTarget.href = fomoData[fomoNUmber].target;
+    fomoTarget.addEventListener('click',fomoData[fomoNUmber].btnFunction)
 }
 
 function closeFomo() {

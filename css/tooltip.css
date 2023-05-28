@@ -19,7 +19,11 @@
 
 /* aria-label="Finaliza el primer nivel" data-microtip-size="small" data-microtip-position="top" role="tooltip" */
 
-
+/* :root {
+    --microtip-transition-delay: .3s;
+    --microtip-color: #fff;
+    --microtip-background-color: #423D4C;
+} */
 
 
 [aria-label][role~="tooltip"] {

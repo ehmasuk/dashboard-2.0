@@ -1870,7 +1870,8 @@ a:hover{
 .profile-content,
 .subscription-content,
 .affiliate-content,
-.facturas-content
+.facturas-content,
+.myoffer-content
 {
     display: none;
 }
@@ -2096,10 +2097,14 @@ a:hover{
         font-size: 
         18px;
     }
+
+
+
+
+    
     .exercise-popup .btn{
         min-width: 40px;
     }
-
     .assignment-popup .single-popup{
         width: 95%;
         max-width: 1200px;
@@ -2161,13 +2166,11 @@ a:hover{
     z-index: 999;
     animation-duration: .5s;
     overflow: hidden;
-
 }
 .mini-formo-popup .profile img {
     border-radius: 50%;
     height: 80px;
     width: 80px;
-    /* object-fit: cover; */
 }
 .mini-formo-popup .profile {
     flex-basis: 20%;
@@ -2203,13 +2206,9 @@ a:hover{
 }
 .mini-formo-popup .info .check-btn {
     background-color: #794eda;
-    outline: none !important;
-}
-.mini-formo-popup .info .check-btn a {
-    background-color: #794eda;
     color: #fff;
-    text-decoration: none;
 }
+
 .mini-formo-popup .fa-times {
     position: absolute;
     right: 10px;
@@ -2238,6 +2237,63 @@ a:hover{
 }
 
 
+/* my offers */
+.single-got-course{
+    display: flex;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 5px 5px 20px #2457da29;
+    margin-bottom: 30px;
+    border: 1px solid #eee;
+}
+.single-got-course .course-img{
+    width: 250px;
+    height: 180px;
+}
+.single-got-course .course-infos{
+    padding: 10px 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+.single-got-course .course-infos .batch{
+    position: absolute;
+    right: -25px;
+    top: 15px;
+    background: greenyellow;
+    padding: 0px 30px;
+    font-size: 14px;
+    transform: rotate(45deg);
+}
+.single-got-course .course-infos .c-name{
+    font-weight: 600;
+    font-size: 18px;
+    padding-right: 55px;
+}
+.single-got-course .course-infos .author{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.single-got-course .course-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.single-got-course .course-progress .c-label{
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+.single-got-course .course-progress .progress-bar{
+    background-color: #5932EA;
+}
+.single-got-course .course-progress .progress{
+    width: 100%;
+}
 
 
 
