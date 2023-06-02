@@ -1871,7 +1871,7 @@ a:hover{
 .subscription-content,
 .affiliate-content,
 .facturas-content,
-.myoffer-content
+.myoffers-content
 {
     display: none;
 }
@@ -2299,6 +2299,235 @@ a:hover{
 
 
 
+/* landing task */
+/* landing task */
+/* landing task */
+/* landing task */
+/* landing task */
+/* landing task */
+/* landing task */
+/* landing task */
+
+@keyframes collapsedAnimationClose {
+    from {
+        height: 220px;
+    }
+
+    to {
+        height: 60px;
+    }
+}
+@keyframes collapsedAnimationOpen {
+    from {
+        height: 60px;
+    }
+
+    to {
+        height: 220px;
+    }
+}
+@keyframes animatedIconsIn {
+    from {
+        left: 100%;
+        opacity: 1;
+    }
+
+    to {
+        left: 0;
+        opacity: 0;
+    }
+}
+@keyframes animatedIconsOut {
+    from {
+        left: 0;
+        opacity: 1;
+    }
+
+    to {
+        left: 100%;
+        opacity: 0;
+    }
+}
+
+
+
+.landing-tasks-wraper{
+    margin-bottom: 50px;
+}
+
+.landing-task{
+    display: flex;
+    border: 1px solid #eaecef;
+    border-radius: 2px;
+    overflow: hidden;
+    background-color: #fff;
+}
+.landing-task .score{
+    flex-basis: 20%;
+    border-right: 1px solid #eaecef;
+    padding: 15px;
+}
+.landing-task .score .small-opt{
+    display: none;
+    color: #000;
+    font-size: 17px;
+    margin-left: 5px;
+    font-weight: 500;
+}
+
+.landing-task .tasks{
+    flex-basis: 40%;
+    border-right: 1px solid #eaecef;
+    position: relative;
+    overflow: hidden;
+}
+.landing-task .infos{
+    flex-basis: 40%;
+    padding: 15px;
+    border-right: 1px solid #eaecef;
+}
+.landing-task .landing-task-toggle-btn{
+    text-align: center;
+    padding: 15px 20px 0 20px;
+    cursor: pointer;
+    transition: .3s;
+    background-color: #D3E1FB;
+}
+.landing-task .landing-task-toggle-btn:hover{
+    background-color: #bad2ff;
+}
+
+
+
+.landing-task .score .open{
+    display: flex;
+    justify-content: space-between;
+}
+.landing-task .score .open h5{
+    font-weight: 600;
+    font-size: 25px;
+    margin: 0;
+    color: #000;
+}
+
+
+
+.landing-task .score .opt{
+    color: #667686;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.landing-task .tasks .single-task{
+    display: flex;
+    padding: 15px;
+    cursor: pointer;
+    transition: .3s;
+    width: 100%;
+}
+.landing-task .tasks .single-task:hover{
+    background-color: #E4EDFC;
+    color: #000;
+}
+.landing-task .tasks .single-task .icon{
+    margin-right: 10px;
+}
+.landing-task .tasks .single-task .dos{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.landing-task .tasks .single-task .do{
+    font-size: 15px;
+    font-weight: 500;
+}
+.landing-task .tasks .single-task .left{
+    font-size: 15px;
+}
+.landing-task .tasks .active{
+    background-color: #EEF0F2;
+}
+
+
+
+.tasks .animation-icons{
+    display: flex;
+    position: absolute;
+    left: 100%;
+}
+.tasks .animation-icons i{
+    padding: 15px;
+    margin-top: 3px;
+}
+
+
+
+.landing-task .infos .single-infos{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    flex-direction: column;
+    display: none;
+}
+.landing-task .infos .topper{
+    display: flex;
+    align-items: center;
+
+}
+.landing-task .infos .all-infos .topper i{
+    margin-right: 10px;
+}
+.landing-task .infos .all-infos .topper p{
+    font-size: 15px;
+    font-weight: 500;
+}
+.landing-task .infos .all-infos .info{
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.landing-task .infos .single-infos .complete-btn button{
+    background-color: #00CB84;
+    color: #fff;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+
+
+.collapsed-tasks .single-task{
+    width: auto !important;
+}
+.collapsed-tasks .single-task .icon{
+    margin-right: 0 !important;
+}
+.collapsed-tasks{
+    display: flex !important;
+}
+.collapsed-tasks .single-task .dos{
+    display: none !important;
+}
+.collapsed-score .open{
+    display: none !important;
+}
+.collapsed-score .opt{
+    margin-bottom: 0 !important;
+}
+.collapsed-score .small-opt{
+    display: inline-block !important;
+}
+
+
+
+
+
+
+
+.collapsed-infos .single-infos .all-infos .info{
+    display: none !important;
+}
+.collapsed-infos .single-infos .complete-btn{
+    display: none !important;
+}
 
 
 
@@ -2308,3 +2537,9 @@ a:hover{
 
 
 
+/* landing task end */
+/* landing task end */
+/* landing task end */
+/* landing task end */
+/* landing task end */
+/* landing task end */
