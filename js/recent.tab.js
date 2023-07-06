@@ -1,3 +1,15 @@
+
+
+
+
+
+// startup open close accordion
+// startup open close accordion
+// startup open close accordion
+// startup open close accordion
+// startup open close accordion
+
+
 const taskTogglerBtn = document.querySelector('.landing-task-toggle-btn');
 const taskTogglerIcon = document.querySelector('.landing-task .landing-task-toggle-btn i');
 
@@ -66,13 +78,14 @@ for(let i=0; i<landingSingleTask.length; i++){
 
 
 }
-
-
 landingSingleInfos[0].style.display = 'flex';
 
 
 
 
-
+// startup open close accordion end
+// startup open close accordion end
+// startup open close accordion end
+// startup open close accordion end
 
 
