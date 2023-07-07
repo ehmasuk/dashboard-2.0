@@ -23,6 +23,9 @@ body {
 .newsidebar-header{
     background: linear-gradient(135deg, rgb(42, 39, 218), rgb(0, 204, 255));
     padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
 }
 .newsidebar-body{
     padding: 20px;

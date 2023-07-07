@@ -1847,22 +1847,11 @@ a:hover {
 .affiliate-content .aff-three ol li {
     margin-bottom: 5px;
 }
-
-/* all contents */
-.dashboard-content,
-.certificates-content,
-.objective-content,
-.mis-libros-content,
-.puntos-content,
-.video-content,
-.lista-de-content,
-.profile-content,
-.subscription-content,
-.affiliate-content,
-.facturas-content,
-.myoffers-content,
-.services-content {
+.single-content{
     display: none;
+}
+.landing{
+    display: block;
 }
 .landing-single-box1 .landing-box {
     background-color: #ffb2b2;
@@ -2742,7 +2731,6 @@ a:hover {
 
 
 
-
 /* services-content */
 /* services-content */
 /* services-content */
@@ -2752,6 +2740,7 @@ a:hover {
     width: 100%;
     display: flex;
     border-bottom: 2px solid #e5e7eb;
+    flex-wrap: wrap;
 }
 .services-content .dashboard-services-tab p{
     font-size: 17px;
@@ -2787,10 +2776,10 @@ a:hover {
     justify-content: space-between;
 }
 .services-group-clases{
-    flex-basis: 65%;
+    flex-basis: 75%;
 }
 .services-classes-topics{
-    flex-basis: 30%;
+    flex-basis: 23%;
 }
 .services-group-clases .schedule-active{
     background: linear-gradient(to right , #94b9ff, #ffa9f9);
@@ -2851,6 +2840,18 @@ a:hover {
     font-weight: 400;
     color: #545454;
 }
+.services-group-clases .single-class-schedule .class-change{
+    text-align: center;
+    flex-basis: 16%;
+}
+.services-group-clases .single-class-schedule .class-change button{
+    font-weight: 600;
+    border: 2px solid #000;
+}
+.services-group-clases .single-class-schedule .class-change button:hover{
+    background:#000;
+    color: #fff;
+}
 .services-group-clases .single-class-schedule .class-duration{
     font-size: 20px;
     font-weight: 600;
@@ -2865,19 +2866,14 @@ a:hover {
     font-weight: 400;
     color: #545454;
 }
-
-
-
 .services-group-clases .single-class-schedule .class-exercise,
 .services-group-clases .single-class-schedule .class-time,
 .services-group-clases .single-class-schedule .class-duration
 {
-    flex-basis: 28%;
+    flex-basis: 23%;
     justify-content: center;
+
 }
-
-
-
 .services-classes-topics{
     background: linear-gradient(to left , #94b9ff, #ffa9f9);
     padding: 20px 30px;
@@ -2897,12 +2893,78 @@ a:hover {
     margin-bottom: 15px;
     font-weight: 600;
 }
-
-
-
 .services-group-clases:has(>.schedule-active)~.services-classes-topics {
     display: block;
 }
+
+
+
+.services-publish-book-from {
+    margin-top: 60px;
+}
+.services-publish-book-from label{
+    font-size: 18px;
+    font-weight: 500;
+}
+.services-publish-book-from .publish-book-btn{
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #784dd9;
+    color: #fff;
+    padding: 10px 20px;
+}
+.services-publish-book-from .single-input{
+    background: transparent;
+    border: 2px solid #c9cbcd;
+    outline: none;
+    padding: 12px;
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    border-radius: 5px;
+    color: #000;
+    font-weight: 400;
+}
+.services-publish-book-from .form-check-input{
+    transform: scale(1.5);
+    cursor: pointer;
+    height: 17px;
+}
+.services-publish-book-from .publish-img-pick input::-webkit-file-upload-button {
+    display: none;
+}
+.services-publish-book-from .publish-img-pick input {
+    max-width: 130px;
+    margin: 5px auto;
+}
+
+
+
+.publish-img-pick {
+    position: relative;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 3px dashed #c9cbcd;
+    color: #444;
+    cursor: pointer;
+    max-width: 700px;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2949,9 +3011,15 @@ a:hover {
     .landing-task .tasks {
         flex-basis: 50%;
     }
+    .services-classes-topics-item li{
+        font-size: 14px;
+    }
 }
 
 @media only screen and (max-width: 800px) {
+    .video-section .playlist{
+        height:auto;
+    }
     .new-sidebar-dashboard {
         top: 10px !important;
         border-left: 0 !important;
@@ -3066,13 +3134,44 @@ a:hover {
         height: 100px;
         width: 100px;
     }
-
     .affiliate-content .info-bar * {
         font-size: 10px !important;
     }
+    .services-group-clases:has(>.schedule-active)~.services-classes-topics{
+        display: none;
+    }
+    .services-group-clases{
+        flex-basis: 100%;
+    }
+    .services-group-clases .single-class-schedule .class-calender {
+        font-size: 40px;
+    }
+
+
 }
 
 @media only screen and (max-width: 550px) {
+    .services-group-clases .single-class-schedule .class-exercise{
+        display: none;
+    }
+    .services-group-clases .single-class-schedule .class-change,
+    .services-group-clases .single-class-schedule .class-calender{
+        flex-basis: 50%;
+    }
+    .services-group-clases .single-class-schedule .class-exercise, .services-group-clases .single-class-schedule .class-time, .services-group-clases .single-class-schedule .class-duration{
+        flex-basis: 50%;
+        margin: 20px 0;
+    }
+
+
+
+
+    .services-group-clases .single-class-schedule{
+        flex-wrap: wrap;
+    }
+    .content{
+        padding:15px 0;
+    }
     .object-lavel-card {
         flex-basis: 100%;
     }
